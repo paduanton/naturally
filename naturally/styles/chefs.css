@@ -1,0 +1,127 @@
+
+div.row2 {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    height: 580px;
+
+}
+
+
+.row2 h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+#subcontent #content {
+    float: left;
+    width: 630px;
+    line-height: 1.6em;
+}
+
+#subcontent #content #antonio {
+    position: relative;
+    left: -220px;
+}
+
+#subcontent #content #natalia {
+    position: absolute;
+    top: 184px;
+    left: 407px;
+}
+
+#subcontent #content #rita {
+    position: absolute;
+    top: 184px;
+    left: 765px;
+}
+
+#subcontent #content #carolyn {
+    position: absolute;
+    top: 184px;
+    left: 1125px;
+}
+#subcontent #content a {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+#subcontent #content #bioant {
+    width: 225px;
+    height: 200px;
+    text-align: justify;
+    color: dimgrey;
+    font-family: Almendra;
+    font-size: 18px;
+    position: relative;
+    left: -165px;
+}
+#subcontent #content #bionat #linknat {
+    position: relative;
+    bottom: 10px;
+}
+#subcontent #content #bionat {
+    width: 225px;
+    height: 200px;
+    text-align: justify;
+    color: dimgrey;
+    font-family: Almendra;
+    font-size: 18px;
+    position: absolute;
+    left: 457px;
+    top: 480px;
+}
+
+#subcontent #content #biorit {
+    width: 225px;
+    height: 200px;
+    text-align: justify;
+    color: dimgrey;
+    font-family: Almendra;
+    font-size: 18px;
+    position: absolute;
+    left: 815px;
+    top: 480px;
+}
+
+#subcontent #content #biocar {
+    width: 225px;
+    height: 200px;
+    text-align: justify;
+    color: dimgrey;
+    font-family: Almendra;
+    font-size: 18px;
+    position: absolute;
+    left: 1175px;
+    top: 480px;
+}
+
+div.parte {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+/*Cor do titulo e cor do fundo do titulo (parte superior)*/
+.row2 {
+    color: #979797;
+    background-color: #EAF0F7;
+}
+
+#subcontent {
+    padding: 30px 0;
+}
+
+

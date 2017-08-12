@@ -1,0 +1,221 @@
+
+div.row2 {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    height: 1680px;
+
+}
+
+.row2 h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#subcontent #foto {
+    position: relative;
+    top: 20px;
+}
+
+#texto {
+    position: relative;
+    top: 35px;
+}
+#subcontent #content #latest1 #texto ul li article figure img {
+    position:relative;
+	left: 160px;
+    width:250px;
+    height: 175px;
+    margin: 0;
+    padding: 4px;
+    border-radius:12px;
+}
+
+#subcontent #fotoCentral {
+    display: block;
+    width: 602px;
+    height: 422px;
+    position: absolute;
+}
+
+#subcontent #fotoCentral a {
+    display: block;
+    padding: 9px;
+    border: 2px solid lightcoral;
+}
+
+#subcontent #fotoCentral a:hover {
+    border-color: brown;
+}
+
+#subcontent #content {
+    float: left;
+    width: 630px;
+    line-height: 1.6em;
+}
+
+#subcontent #content #latest ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#subcontent #content #latest ul li {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#subcontent #content #latest ul li.last {
+    margin-bottom: 0;
+}
+
+#subcontent #content #latest ul li article figure img {
+    float: left;
+    width: 180px;
+    height: 150px;
+    margin: 0;
+    padding: 4px;
+    border: 1px solid lightcoral;
+}
+
+#subcontent #content #latest ul li article figure figcaption {
+    display: block;
+    float: right;
+    width: 410px;
+}
+
+#subcontent #content #latest ul li article h2 {
+    font-size: 14px;
+}
+
+#subcontent #content #latest1 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#subcontent #content #latest1 ul li {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#subcontent #content #latest1 ul li.last {
+    margin-bottom: 0;
+}
+
+#subcontent #content #latest1 ul li.last a {
+    list-style-type: circle;
+
+}
+
+#subcontent #content #latest1 ul li article figure img {
+    float: left;
+    width: 580px;
+    height: 400px;
+    margin: 0;
+    padding: 4px;
+    border: 1px solid lightcoral;
+}
+
+#subcontent #content #latest1 li.last  figure figcaption {
+    display: block;
+    float: left;
+    width: 410px;
+}
+
+#subcontent #content #latest1 ul li article figure h2 {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Verdana, sans-serif;
+    color: #919191;
+}
+
+div.parte {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.row2 {
+    color: #979797;
+    background-color: #EAF0F7;
+}
+
+.row2 #content.borda {
+    height: 1520px;
+    border-radius: 12px;
+    background: white;
+    padding: 50px 90px;
+}
+
+.row2 a {
+    color: lightcoral;
+    background-color: #EAF0F7;
+
+}
+
+.row2 a:active {
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+#subcontent {
+    padding: 30px 0;
+}
+
+#subcontent section {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+/* ------ conte�do principal----*/
+
+#subcontent #homepage {
+    display: block;
+    width: 100%;
+    line-height: 1.8em;
+}
+
+#subcontent #homepage #services article figure img {
+    margin: 0 0 15px 0;
+    padding: 4px;
+    border: 1px solid #D6D6D6;
+}
+
+#subcontent #homepage #services article figure h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#subcontent #homepage #intro article figure img {
+    float: right;
+    margin: 0 0 10px 0;
+    padding: 4px;
+    border: 1px solid #D6D6D6;
+}
+
+/*cor do fundo foto 450x250*/
+#subcontent #homepage #intro article figure figcaption {
+    float: left;
+    width: 460px;
+    position: relative;
+    right: 20px;
+}
