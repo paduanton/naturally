@@ -1,0 +1,108 @@
+
+#gtco-main {
+    width: 100%;
+    background-color: #d6d6d6;
+    float: left;
+    padding: 5em;
+    padding-bottom: 2em;
+}
+
+#gtco-main .container-fluid {
+    padding: 5em;
+    padding-bottom: 2em;
+}
+
+.fh5co-portfolio {
+    width: 95%;
+    float: left;
+    margin-bottom: 40px;
+    position: relative;
+    left: 18px;
+}
+
+.fh5co-portfolio > a {
+    width: 100%;
+    float: left;
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
+}
+
+.fh5co-portfolio > a:hover {
+    webkit-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+}
+
+.fh5co-portfolio > a:hover .desc {
+    opacity: 1;
+}
+
+.fh5co-portfolio .portfolio-entry {
+    width: 100%;
+    float: left;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .fh5co-portfolio .portfolio-entry {
+        height: 400px;
+    }
+}
+
+.fh5co-portfolio .portfolio-entry .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    padding: 30px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.fh5co-portfolio .portfolio-entry .desc p {
+    color: #8f989f;
+}
+
+.fh5co-portfolio .portfolio-text {
+    width: 100%;
+    float: left;
+    padding: 20px;
+}
+
+.fh5co-portfolio .portfolio-text h3 {
+    font-size: 20px;
+}
+
+.fh5co-portfolio .portfolio-text .stuff {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 20px;
+}
+
+.fh5co-portfolio .portfolio-text .stuff li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
+
+.fh5co-portfolio .portfolio-text .stuff li:first-child {
+    margin-left: 0;
+}
+
+.fh5co-portfolio .portfolio-text .stuff li i {
+    font-size: 14px;
+    padding-right: 5px;
+}

@@ -1,0 +1,255 @@
+
+
+.offcanvas #page {
+    overflow: hidden;
+    position: absolute;
+}
+
+.offcanvas #page:after {
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+}
+
+#gtco-maine {
+    width: 100%;
+    background-color: #DD356E;
+    float: left;
+}
+
+.mt-negative {
+    top: -7em;
+    position: relative;
+    z-index: 200;
+}
+
+article {
+    text-align: center;
+    float: left;
+    margin-bottom: 0px;
+    padding: 0em;
+    background: #fff;
+    position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    article {
+        margin-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    article {
+        margin-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        margin-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+article h2 {
+    font-family: "Crimson Text", Arial, sans-serif;
+    color: #000;
+}
+
+@media screen and (max-width: 992px) {
+    article h2 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    article h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+article .content-article {
+    padding-top: 1em;
+}
+
+.form-control {
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 54px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.form-control:active, .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #F73859;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (   min--moz-device-pixel-ratio: 2), only screen and (     -o-min-device-pixel-ratio: 2/1), only screen and (        min-device-pixel-ratio: 2), only screen and (                min-resolution: 192dpi), only screen and (                min-resolution: 2dppx) {
+
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts-icons/icons/icomoon/icomoon.eot?srf3rx");
+    src: url("../fonts-icons/icons/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts-icons/icons/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts-icons/icons/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts-icons/icons/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#page {
+    position: relative;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.offcanvas #page:after {
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+}
+
+.gtco-cover {
+    height: 370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.gtco-cover .overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(145, 145, 145, 0.68);
+}
+
+@media screen and (max-width: 768px) {
+    .gtco-cover {
+        height: 600px;
+    }
+}
+
+#page {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.offcanvas #page {
+    overflow: hidden;
+    position: absolute;
+}
+
+.offcanvas #page:after {
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+}
+
+.fh5co-heading {
+    margin-bottom: 3em;
+}
+
+.fh5co-heading h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.fh5co-heading p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #828282;
+}
+
+.contact-info {
+    margin-bottom: 4em;
+    padding: 0;
+}
+
+.contact-info li {
+    list-style: none;
+    margin: 0 0 20px 0;
+    position: relative;
+    padding-left: 40px;
+    color: #000;
+}
+
+.contact-info li i {
+    position: absolute;
+    top: .3em;
+    left: 0;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.fh5co-contact h3, .fh5co-contact li {
+    text-align: center !important;
+}
+
+.tab h3, .tab li{
+    text-align: center;
+}
+
+.btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    outline: thin dotted !important;
+    outline: 0px auto -webkit-focus-ring-color !important;
+    outline-offset: 0px !important;
+    font-family: "Inconsolata", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 8px 20px;
+}
