@@ -6,12 +6,11 @@
     <div class="fh5co-bio">
         <figure>
             <a href="#">
-                <img src="https://scontent.fpoa7-2.fna.fbcdn.net/v/t1.0-9/15871709_649883415191566_4657931901504769727_n.jpg?oh=759aa583629ac248f36e05b03d8a6683&oe=5A58DAA1"
-                     class="img-responsive">
+                <img ng-src="{{fb_image}}" class="img-responsive">
             </a>
         </figure>
         <h3 class="heading">Sobre mim</h3>
-        <a href="#"><h3>Antonio Júnior</h3></a>
+        <a href="#"><h3>{{facebook.username}}</h3></a>
         <p>Um amante de TI, fanático por SERIADOS e apaixonado por GAMES.</p>
         <!-- <ul class="fh5co-social">
             <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -29,7 +28,7 @@
                 </a>
             </h3>
             <ul>
-                <li class=""><p class="text-muted">antonio.junior.h@gmail.com</p></li>
+                <li class=""><p class="text-muted">{{facebook.email}}</p></li>
                 <hr/>
                 <li class="glyphicon glyphicon-heart-empty"><a href="#"> Seguindo</a></li>
                 <li class="glyphicon glyphicon-heart"><a href="#"> Seguidores</a></li>
@@ -66,20 +65,19 @@
                     <div class="navbar-menu-items wow fadeIn">
                         <li class="nav navbar-nav navbar-right">
                             <a class="js-perfil-toggle perfil-toggle">
-                                <img class="img-circle"
-                                     src="https://scontent.fpoa7-2.fna.fbcdn.net/v/t1.0-9/15871709_649883415191566_4657931901504769727_n.jpg?oh=759aa583629ac248f36e05b03d8a6683&oe=5A58DAA1">
-                                Antonio Júnior
+                                <img ng-src="{{fb_image}}" class="img-circle">
+                                {{facebook.username}}
                             </a>
                         </li>
                         <li class="nav navbar-nav navbar-right  ">
-                            <button type="button" class="login" href="frontend/conteudo/explorar.html">
+                            <button type="button" ng-click="facebookLogin()" class="login">
                                 <!--<span class="glyphicon glyphicon-log-in"></span> -->
                                 <div class="sign">
                                     <img src="frontend/assets/img/fb.png">Login
                                 </div>
                             </button>
                         </li>
-
+                        <script src="frontend/assets/js/app.js"></script>
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>
                         </li>
                         <li class="nav navbar-nav navbar-right  "><a

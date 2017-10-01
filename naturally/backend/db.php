@@ -19,3 +19,4 @@ try {
     // Se ocorrer algum erro na conexão
     die($e->getMessage());
 }
+?>

@@ -890,6 +890,7 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 30px;
 }
 
+
 .perfil-toggle:hover {
     cursor: pointer;
     background-color: #fff;
@@ -920,7 +921,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .login {
     color: black;
     height: 40px;
-    font-family: "Roboto Mono";
+    font-size: 14px;
+    font-family: "Roboto Mono", serif;
     font-weight: 500 !important;
     border-radius: 800px;
     border: none;
