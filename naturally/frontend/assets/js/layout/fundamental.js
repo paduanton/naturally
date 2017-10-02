@@ -377,7 +377,9 @@ $.fn.followTo = function ( pos ) {
     });
 };
 $('#fh5co-aside').followTo(600);*/
+/*
 var windw = this;
+
 
 $.fn.followTo = function (elem) {
     var $this = this,
@@ -401,7 +403,7 @@ $.fn.followTo = function (elem) {
     setPosition();
 };
 
-$('#fh5co-aside').followTo('#rolagem');
+$('#fh5co-aside').followTo('#rolagem');*/
 
 // TOOLTIP
 $(document).ready(function () {
