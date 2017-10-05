@@ -231,7 +231,7 @@ a:hover, a:active, a:focus {
 
 h1, h2, h3, h4, h5, h6, figure {
     color: #000;
-    font-family: "Roboto Mono", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
     margin: 0 0 20px 0;
 }
