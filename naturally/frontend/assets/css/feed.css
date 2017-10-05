@@ -332,7 +332,7 @@
 .gtco-cover .display-tc h2 {
     font-size: 20px;
     line-height: 1.5;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
     margin-bottom: 30px;
     text-transform: none;
 }
@@ -493,7 +493,7 @@
 }
 
 .modal {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
     padding: 0 !important;
 }
 
@@ -516,7 +516,7 @@
 
 .modal-title {
     text-transform: uppercase;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
     font-weight: 500;
     font-size: 35px;
     text-align: center;
@@ -557,7 +557,7 @@ input:read-only {
 .conversor-content h3 {
     font-size: 20px;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
 }
 
 .entradaDados .quantidade-entrada {
@@ -655,7 +655,7 @@ input:read-only {
 }
 
 .desc p {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
     color: black;
     font-size: 17px;
 }
