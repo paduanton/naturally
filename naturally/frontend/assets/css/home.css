@@ -410,7 +410,7 @@
     font-size: 18px;
     color: #727272;
     font-weight: 300;
-    font-family: "Roboto Mono", Arial, serif;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 #servico span {
@@ -420,7 +420,7 @@
 
 .intro-heading {
     color: rgba(0, 0, 0, 0.8);
-    font-family: "Roboto Mono", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: 300;
     margin: 0 0 30px 0;
 }
@@ -457,7 +457,7 @@
 
 .services h3 {
     font-size: 13px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -603,7 +603,7 @@
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 14px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     color: white;
     border: 1px solid red;
     padding: 10px 15px;
@@ -643,7 +643,7 @@
 
 .blog-flex .blog-entry .blog-post .desc h3 {
     font-weight: 300;
-    font-family: "Oxygen", sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 10px;
@@ -700,7 +700,7 @@
 }
 
 .modal-title {
-    font-family: Amatic SC;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
     font-size: 45px;
     text-align: center;
@@ -887,7 +887,7 @@
 .gtco-cover .display-tc h2 {
     font-size: 20px;
     line-height: 1.5;
-    font-family: "Roboto Mono", serif;
+    font-family: 'Chenla', cursive;
     margin-bottom: 15px;
     text-transform: none;
 }
@@ -922,10 +922,10 @@
 #gtco-counter .display-tc .text-link,
 .gtco-cover .display-tc .text-link {
     border-bottom: none;
-    font-family: "Crimson Text", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 14px;
     color: #fff;
-    font-family: "Roboto Mono", serif;
+    font-family: 'Shadows Into Light', cursive;
     text-transform: uppercase;
     letter-spacing: 2px;
 }

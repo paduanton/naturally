@@ -49,7 +49,7 @@ body {
 
 #fh5co-aside #fh5co-logo {
     text-align: center;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: 700;
     margin-bottom: 2em;
     text-transform: uppercase;
@@ -99,7 +99,7 @@ body {
     position: relative;
     padding: 10px 10px;
     letter-spacing: .2em;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
