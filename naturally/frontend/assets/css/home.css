@@ -700,7 +700,7 @@
 }
 
 .modal-title {
-    font-family: Amatic SC;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
     font-size: 45px;
     text-align: center;
@@ -922,10 +922,10 @@
 #gtco-counter .display-tc .text-link,
 .gtco-cover .display-tc .text-link {
     border-bottom: none;
-    font-family: "Crimson Text", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 14px;
     color: #fff;
-    font-family: "Roboto Mono", serif;
+    font-family: 'Shadows Into Light', cursive;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
