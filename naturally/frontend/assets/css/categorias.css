@@ -1,6 +1,6 @@
 
 body {
-    font-family: "Inconsolata", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
     line-height: 1.7;
     color: #333333;
@@ -52,7 +52,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
     color: #000;
-    font-family: "Inconsolata", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
     margin: 0 0 20px 0;
 }
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 0;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: "Inconsolata", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
 }
 .fh5co-nav #fh5co-logo a span {
     color: #DD356E;
@@ -823,7 +823,7 @@ input[type="text"] {
 .btn {
     margin-right: 4px;
     margin-bottom: 4px;
-    font-family: "Inconsolata", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 16px;
     font-weight: 400;
     -webkit-border-radius: 30px;
@@ -1061,7 +1061,7 @@ ul.navbar-nav {
 }
 
 .display-tc .container button[type=button] {
-    font-family: "Roboto Mono", serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 15px;
     position: relative;
     left: 700px;
@@ -1073,7 +1073,7 @@ ul.navbar-nav {
     margin: 0;
     background: none;
     border: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 16px;
     font-weight: 300;
     height: 40px;
@@ -1092,7 +1092,7 @@ ul.navbar-nav {
 }
 
 .navbar-search-form input[type="text"]:focus {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: 500;
     outline: 0;
     background: white;
@@ -1270,7 +1270,7 @@ ul.navbar-nav {
     margin: 0;
     list-style: none;
     display: inline;
-    font-family: "Roboto Mono", serif;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .gtco-nav ul li > a { /* NAV BAR */
@@ -1698,7 +1698,7 @@ ul.navbar-nav {
 .gtco-cover .display-tc h2 {
     font-size: 20px;
     line-height: 1.5;
-    font-family: "Roboto Mono", serif;
+    font-family: 'Shadows Into Light', cursive;
     margin-bottom: 30px;
     text-transform: none;
 }
@@ -1850,7 +1850,7 @@ ul.navbar-nav {
 #gtco-testimonial .testimonial p.author cite {
     font-style: normal;
     font-size: 13px;
-    font-family: "Crimson Text", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 #gtco-testimonial .testimonial p:last-child {
@@ -3141,7 +3141,7 @@ figure figcaption {
     margin: 20px auto 0px auto;
     color: #b3b3b3;
     font-style: italic;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
 }
 @media screen and (max-width: 480px) {
     figure figcaption {
@@ -3201,7 +3201,7 @@ figure figcaption {
 }
 #fh5co-aside #fh5co-logo {
     text-align: center;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: 700;
     margin-bottom: 2em;
     margin-left: 0px;
@@ -3247,7 +3247,7 @@ figure figcaption {
     position: relative;
     padding: 10px 10px;
     letter-spacing: .2em;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -3940,7 +3940,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .btn {
     margin-right: 4px;
     margin-bottom: 4px;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
@@ -4255,7 +4255,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 
 
 body {
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
     line-height: 1.8;
     color: #8f989f;

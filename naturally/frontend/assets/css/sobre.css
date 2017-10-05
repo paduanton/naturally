@@ -114,7 +114,7 @@ article a:hover {
     font-size: 30px;
     display: block;
     color: black;
-    font-family: "Inconsolata", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     width: 100%;
     font-weight: 500;
     margin-bottom: .3em;
@@ -214,7 +214,7 @@ article a:hover {
 #gtco-main .related-title {
     font-size: 18px;
     text-transform: uppercase;
-    font-family: "Roboto Mono", serif;
+    font-family: 'Shadows Into Light', cursive;
     color: #000;
     margin-bottom: 0px;
 }
@@ -289,7 +289,8 @@ article .gtco-highlight {
 .gtco-cover .display-tc h1 {
     margin-bottom: 0px;
     margin-top: 0;
-    font-size: 45px;
+
+    -size: 45px;
 !important;
     line-height: 1.1;
     font-weight: 300;
@@ -308,7 +309,7 @@ article .gtco-highlight {
 .gtco-cover .display-tc h2 {
     font-size: 20px;
     line-height: 1.5;
-    font-family: "Roboto Mono", serif;
+    font-family: 'Shadows Into Light', cursive;
     margin-bottom: 30px;
     text-transform: none;
 }
@@ -317,10 +318,10 @@ article .gtco-highlight {
 #gtco-counter .display-tc .text-link,
 .gtco-cover .display-tc .text-link {
     border-bottom: none;
-    font-family: "Crimson Text", Arial, sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 14px;
     color: #fff;
-    font-family: "Roboto Mono", serif;
+    font-family: 'Shadows Into Light', cursive;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
