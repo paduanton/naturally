@@ -456,9 +456,10 @@
 }
 
 .services h3 {
-    font-size: 47px;
+    font-size: 13px;
     font-family: 'Amatic SC', cursive;
-    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-weight: 700;
 }
 
@@ -575,7 +576,7 @@
 
 .blog-flex .featured-blog .desc-t h3 {
     font-weight: 700;
-    font-family: "Oxygen", sans-serif;
+    font-family: 'Amatic SC', cursive;
     font-size: 30px;
     margin-bottom: 10px;
     line-height: 40px;
@@ -886,7 +887,7 @@
 .gtco-cover .display-tc h2 {
     font-size: 20px;
     line-height: 1.5;
-    font-family: 'Chenla', cursive;
+    font-family: 'Amatic SC', cursive;
     margin-bottom: 15px;
     text-transform: none;
 }
