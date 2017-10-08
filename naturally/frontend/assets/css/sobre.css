@@ -1,6 +1,9 @@
-article a:hover {
+article a {
     color:#F73859;
-    cursor: pointer;
+    cursor:url(../img/naturally.ico), auto;
+}
+article a:hover {
+    color: #f73859;
 }
 .fh5co-team .social-time a {
     font-size: 20px;

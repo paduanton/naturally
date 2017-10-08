@@ -10,7 +10,7 @@ app.controller('naturallyController', ['$scope', function ($scope) {
            if(response.authResponse) {
                FB.api('/me', 'GET', {fields: 'email, first_name, last_name, name, id, picture'}, function(response) {
                    $scope.$apply(function () {
-                       $scope.facebook.username = response.name;
+                       $scope.facebook.name = response.name;
                        $scope.facebook.first_name = response.first_name;
                        $scope.facebook.last_name = response.last_name;
                        $scope.facebook.email = response.email;

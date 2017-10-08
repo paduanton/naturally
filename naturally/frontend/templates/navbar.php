@@ -76,6 +76,7 @@
                                     <img src="frontend/assets/img/fb.png">Logar com Facebook
                                 </div>
                             </button>
+                            <?php include '../../backend/index.php'; echo $output; ?>
                         </li>
                         <script src="frontend/assets/js/app.js"></script>
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>

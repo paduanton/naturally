@@ -24,7 +24,7 @@
 <body ng-app="appNaturally" ng-controller="naturallyController">
 <!--<div class="gtco-loader"></div>-->
 <div id="page">
-    <div ng-include='"frontend/templates/navbar.html"'></div>
+    <div ng-include='"frontend/templates/navbar.php"'></div>
     <div ng-view></div>
     <!--Footer-->
     <div ng-include='"frontend/templates/footer.html"'></div>

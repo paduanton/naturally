@@ -2,7 +2,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         // index
         .when("/", {
-            templateUrl: "home.html",
+            templateUrl: "home.php",
             controller: "HomeController"
         })
         // Paginas
