@@ -410,7 +410,7 @@
     font-size: 18px;
     color: #727272;
     font-weight: 300;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
 }
 
 #servico span {
@@ -420,7 +420,7 @@
 
 .intro-heading {
     color: rgba(0, 0, 0, 0.8);
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
     font-weight: 300;
     margin: 0 0 30px 0;
 }
@@ -457,7 +457,7 @@
 
 .services h3 {
     font-size: 13px;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
