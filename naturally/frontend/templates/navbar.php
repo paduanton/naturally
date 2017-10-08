@@ -66,16 +66,17 @@
                         <li class="nav navbar-nav navbar-right">
                             <a class="js-perfil-toggle perfil-toggle">
                                 <img ng-src="{{fb_image}}" class="img-circle">
-                                {{facebook.first_name}}
+                                {{facebook.name}}
                             </a>
                         </li>
                         <li class="nav navbar-nav navbar-right  ">
                             <button type="button" ng-click="facebookLogin()" class="login">
                                 <!--<span class="glyphicon glyphicon-log-in"></span> -->
                                 <div class="sign">
-                                    <img src="frontend/assets/img/fb.png">Login
+                                    <img src="frontend/assets/img/fb.png">Logar com Facebook
                                 </div>
                             </button>
+                            <?php include '../../backend/index.php'; echo $output; ?>
                         </li>
                         <script src="frontend/assets/js/app.js"></script>
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>

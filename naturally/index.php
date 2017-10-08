@@ -24,7 +24,7 @@
 <body ng-app="appNaturally" ng-controller="naturallyController">
 <!--<div class="gtco-loader"></div>-->
 <div id="page">
-    <div ng-include='"frontend/templates/navbar.html"'></div>
+    <div ng-include='"frontend/templates/navbar.php"'></div>
     <div ng-view></div>
     <!--Footer-->
     <div ng-include='"frontend/templates/footer.html"'></div>
@@ -42,6 +42,7 @@
 <!--Angular-->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script> -->
 <script src="frontend/assets/js/module.js"></script>
 <script src="frontend/assets/js/route.js"></script>
 <script src="frontend/assets/js/controllers.js"></script>
