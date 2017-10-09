@@ -300,7 +300,7 @@ h1, h2, h3, h4, h5, h6, figure {
     margin: 0;
     list-style: none;
     display: inline;
-    font-family: "Roboto Mono", serif;
+    font-family: 'Amatic SC', cursive;
 }
 
 .gtco-nav ul li > a { /* NAV BAR */
@@ -535,7 +535,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #gtco-footer .footer-logo {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
 }
 
 #gtco-footer dt {
