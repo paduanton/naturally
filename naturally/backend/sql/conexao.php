@@ -15,10 +15,7 @@ $dsn = "mysql:host={$host};port=3306;dbname={$banco}";
 try {
     $pdo = new PDO($dsn, $usuario, $senha);
     echo 'Conectado';
-    phpinfo();
 } catch (PDOException $e) {
     // Se ocorrer algum erro na conexão
     die($e->getMessage());
 }
-
-phpinfo();

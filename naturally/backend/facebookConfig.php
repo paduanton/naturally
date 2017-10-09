@@ -24,12 +24,12 @@ use Facebook\Exceptions\FacebookSDKException;
 $appId         = '278997635938705'; //Facebook App ID
 $appSecret     = '7f24451c41637e723665d3dce57c478c'; //Facebook App Secret
 $redirectURL   = 'http://localhost/backend/'; //Callback URL
-$fbPermissions = array('email');  //Optional permissions
+$fbPermissions = array('email');  // Permissões opcionais
 
 $fb = new Facebook(array(
     'app_id' => $appId,
     'app_secret' => $appSecret,
-    'default_graph_version' => 'v2.2',
+    'default_graph_version' => 'v2.10',
 ));
 
 // Get redirect login helper

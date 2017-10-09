@@ -1,8 +1,8 @@
 <div id="fh5co-offcanvas">
     <a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas"><span><i
-            class="icon-cross"><i
-            class="icon-cross"></i><i
-            class="icon-cross"></i></i></span></a>
+                class="icon-cross"><i
+                    class="icon-cross"></i><i
+                    class="icon-cross"></i></i></span></a>
     <div class="fh5co-bio">
         <figure>
             <a href="#">
@@ -12,11 +12,9 @@
         <h3 class="heading">Sobre mim</h3>
         <a href="#"><h3>{{facebook.username}}</h3></a>
         <p>Um amante de TI, fanático por SERIADOS e apaixonado por GAMES.</p>
-        <!-- <ul class="fh5co-social">
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-facebook"></i></a></li>
-            <li><a href="#"><i class="icon-instagram"></i></a></li>
-        </ul> -->
+        <ul class="fh5co-social">
+           <li><a href="#"><i class="icon-facebook"></i></a></li>
+        </ul>
     </div>
 
     <div class="fh5co-menu">
@@ -71,14 +69,15 @@
                         </li>
                         <li class="nav navbar-nav navbar-right  ">
                             <button type="button" ng-click="facebookLogin()" class="login">
-                                <!--<span class="glyphicon glyphicon-log-in"></span> -->
                                 <div class="sign">
-                                    <img src="frontend/assets/img/fb.png">Logar com Facebook
+                                    <img src="frontend/assets/img/fb.png">Logar com JS
                                 </div>
                             </button>
-                            <?php include '../../backend/index.php'; echo $output; ?>
                         </li>
-                        <script src="frontend/assets/js/app.js"></script>
+                       <!-- <li class="nav navbar-nav navbar-right">
+                            <?php //include '../../backend/index.php';
+                            //echo $output;?>
+                        </li>-->
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>
                         </li>
                         <li class="nav navbar-nav navbar-right  "><a
