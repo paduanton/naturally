@@ -11,7 +11,7 @@ if(!session_id()){
 
 // Include the autoloader provided in the SDK
 // require_once __DIR__ . 'lib/Facebook/autoload.php';
-require_once 'lib/Facebook/autoload.php';
+require_once 'lib/php-graph-sdk-5.x/src/Facebook/autoload.php';
 
 // Include required libraries
 use Facebook\Facebook;
@@ -19,11 +19,11 @@ use Facebook\Exceptions\FacebookResponseException;
 use Facebook\Exceptions\FacebookSDKException;
 
 /*
- * Configuration and setup Facebook SDK
+ * Configuração e setup do Facebook SDK
  */
 $appId         = '278997635938705'; //Facebook App ID
 $appSecret     = '7f24451c41637e723665d3dce57c478c'; //Facebook App Secret
-$redirectURL   = 'http://localhost/backend/'; //Callback URL
+$redirectURL   = 'http://localhost/backend/php/'; //Callback URL
 $fbPermissions = array('email');  // Permissões opcionais
 
 $fb = new Facebook(array(
@@ -49,5 +49,3 @@ try {
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
     exit;
 }
-
-?>
