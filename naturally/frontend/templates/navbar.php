@@ -6,14 +6,14 @@
     <div class="fh5co-bio">
         <figure>
             <a href="#">
-                <img ng-src="{{fb_image}}" class="img-responsive">
+                <img ng-src="{{facebook.image}}" class="img-responsive">
             </a>
         </figure>
         <h3 class="heading">Sobre mim</h3>
-        <a href="#"><h3>{{facebook.username}}</h3></a>
+        <a href="#"><h3>{{facebook.name}}</h3></a>
         <p>Um amante de TI, fanático por SERIADOS e apaixonado por GAMES.</p>
         <ul class="fh5co-social">
-           <li><a href="#"><i class="icon-facebook"></i></a></li>
+           <li><a ng-href="{{facebook.link}}"><span class="icon-facebook-with-circle"></span></a></li>
         </ul>
     </div>
 
@@ -37,14 +37,14 @@
         </div>
         <div class="fh5co-box">
             <h3 class="heading">Pesquisar na história</h3>
-            <form action="#">
+            <form>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="O que deseja procurar?">
                 </div>
             </form>
         </div>
         <p id="sair">
-            <a href="">
+            <a ng-click="">
                 <span class="glyphicon glyphicon-log-out"></span> SAIR
             </a>
         </p>
@@ -63,7 +63,7 @@
                     <div class="navbar-menu-items wow fadeIn">
                         <li class="nav navbar-nav navbar-right">
                             <a class="js-perfil-toggle perfil-toggle">
-                                <img ng-src="{{fb_image}}" class="img-circle">
+                                <img ng-src="{{facebook.image}}" class="img-circle">
                                 {{facebook.name}}
                             </a>
                         </li>
@@ -74,9 +74,8 @@
                                 </div>
                             </button>
                         </li>
-                       <!-- <li class="nav navbar-nav navbar-right">
-                            <?php //include '../../backend/index.php';
-                            //echo $output;?>
+                        <!--<li class="nav navbar-nav navbar-right">
+                          <?php //include '../../backend/php/index.php'; echo $output; ?>
                         </li>-->
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>
                         </li>

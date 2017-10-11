@@ -110,13 +110,14 @@ ul.navbar-nav {
 }
 
 .navbar-search-form button[type="submit"]:active {
-   background: #f3f3f3;
+    background: #f3f3f3;
 }
 
 .navbar-search-form button[type="submit"]:hover {
     background-color: #ececec;
     color: black;
 }
+
 .navbar-search-form select {
     background-color: #fff;
     height: 42px;
@@ -482,6 +483,19 @@ h1, h2, h3, h4, h5, h6, figure {
     display: inline-block;
     zoom: 1;
     *display: inline;
+}
+
+.fh5co-social li a span {
+    color: #1d4d89;
+    font-size: 40px;
+}
+
+.fh5co-social li a span:hover {
+    color: #1d3a74;
+}
+
+.fh5co-box h3.heading {
+    font-size: 15px !important;
 }
 
 .gtco-social-icons li a {
@@ -890,7 +904,6 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 30px;
 }
 
-
 .perfil-toggle:hover {
     cursor: pointer;
     background-color: #fff;
@@ -954,7 +967,6 @@ button[type="button"] {
 .login img {
     width: 35px;
     height: 30px;
-
 }
 
 .uppercase {

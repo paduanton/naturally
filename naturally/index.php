@@ -44,11 +44,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script> -->
-<script src="frontend/assets/js/module.js"></script>
-<script src="frontend/assets/js/route.js"></script>
-<script src="frontend/assets/js/controllers.js"></script>
+<script src="backend/javascript/module.js"></script>
+<script src="backend/javascript/route.js"></script>
+<script src="backend/javascript/controllers.js"></script>
 <!--JavaScript-->
-<script src="frontend/assets/js/app.js"></script>
+<script src="backend/javascript/app.js"></script>
 <script src="frontend/assets/js/layout/jquery.easing.1.3.js"></script>
 <script src="frontend/assets/js/layout/jquery.waypoints.min.js"></script>
 <script src="frontend/assets/js/layout/jquery.stellar.min.js"></script>
