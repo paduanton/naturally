@@ -7,10 +7,10 @@
  */
 require_once 'fbConfig.php';
 
-// Remove access token from session
+// remove token de acesso da sessão
 unset($_SESSION['facebook_access_token']);
 
-// Remove user data from session
+// remove dados do usuário da essão
 unset($_SESSION['userData']);
 
 $cookie_name = session_name();

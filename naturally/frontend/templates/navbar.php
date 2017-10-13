@@ -1,4 +1,4 @@
-<div id="fh5co-offcanvas">
+<!--<div id="fh5co-offcanvas">
     <a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas"><span><i
                 class="icon-cross"><i
                     class="icon-cross"></i><i
@@ -49,8 +49,9 @@
             </a>
         </p>
     </div>
-</div>
+</div> -->
 <!--Navbar-->
+
 <nav class="gtco-nav" role="navigation">
     <div class="container">
         <div class="row">
@@ -61,7 +62,7 @@
             <div class="col-xs-10 text-right menu-1">
                 <ul>
                     <div class="navbar-menu-items wow fadeIn">
-                        <li class="nav navbar-nav navbar-right">
+                        <!--<li class="nav navbar-nav navbar-right">
                             <a class="js-perfil-toggle perfil-toggle">
                                 <img ng-src="{{facebook.image}}" class="img-circle">
                                 {{facebook.name}}
@@ -73,10 +74,15 @@
                                     <img src="frontend/assets/img/fb.png">Logar com JS
                                 </div>
                             </button>
+                        </li> -->
+                        <li class="nav navbar-nav navbar-right">
+
+                          <?php include '../../backend/php/index.php';
+                           //include '../../index.html';
+                           echo $mostrar;
+                          ?>
+
                         </li>
-                        <!--<li class="nav navbar-nav navbar-right">
-                          <?php //include '../../backend/php/index.php'; echo $output; ?>
-                        </li>-->
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>
                         </li>
                         <li class="nav navbar-nav navbar-right  "><a

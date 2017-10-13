@@ -5,11 +5,10 @@
  * Date: 08/10/2017
  * Time: 17:07
  */
-if(!session_id()){
+//if(!session_id()){
     session_start();
-}
+//}
 
-// Include the autoloader provided in the SDK
 // require_once __DIR__ . 'lib/Facebook/autoload.php';
 require_once 'lib/php-graph-sdk-5.x/src/Facebook/autoload.php';
 
@@ -32,10 +31,10 @@ $fb = new Facebook(array(
     'default_graph_version' => 'v2.10',
 ));
 
-// Get redirect login helper
+// Pega redirect login helper
 $helper = $fb->getRedirectLoginHelper();
 
-// Try to get access token
+// Pega token de acesso
 try {
     if(isset($_SESSION['facebook_access_token'])){
         $accessToken = $_SESSION['facebook_access_token'];
@@ -43,9 +42,9 @@ try {
         $accessToken = $helper->getAccessToken();
     }
 } catch(FacebookResponseException $e) {
-    echo 'Graph returned an error: ' . $e->getMessage();
+    echo 'Graph retornou um erro: ' . $e->getMessage();
     exit;
 } catch(FacebookSDKException $e) {
-    echo 'Facebook SDK returned an error: ' . $e->getMessage();
+    echo 'Facebook SDK retornou um erro: ' . $e->getMessage();
     exit;
 }
