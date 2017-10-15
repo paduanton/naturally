@@ -6,7 +6,7 @@
  * Time: 17:07
  */
 //if(!session_id()){
-    session_start();
+session_start();
 //}
 
 // require_once __DIR__ . 'lib/Facebook/autoload.php';
@@ -18,12 +18,12 @@ use Facebook\Exceptions\FacebookResponseException;
 use Facebook\Exceptions\FacebookSDKException;
 
 /*
- * Configuração e setup do Facebook SDK
+ * configuração e setup do Facebook SDK
  */
-$appId         = '278997635938705'; //Facebook App ID
-$appSecret     = '7f24451c41637e723665d3dce57c478c'; //Facebook App Secret
-$redirectURL   = 'http://localhost/backend/php/'; //Callback URL
-$fbPermissions = array('email');  // Permissões opcionais
+$appId = '278997635938705'; //Facebook App ID
+$appSecret = '7f24451c41637e723665d3dce57c478c'; //Facebook App Secret
+$redirectURL = 'http://localhost/backend/php/'; //Callback URL
+$fbPermissions = array('email');  // permissões opcionais
 
 $fb = new Facebook(array(
     'app_id' => $appId,
@@ -31,20 +31,20 @@ $fb = new Facebook(array(
     'default_graph_version' => 'v2.10',
 ));
 
-// Pega redirect login helper
+// pega redirect login helper
 $helper = $fb->getRedirectLoginHelper();
 
-// Pega token de acesso
+// pega token de acesso
 try {
-    if(isset($_SESSION['facebook_access_token'])){
+    if (isset($_SESSION['facebook_access_token'])) {
         $accessToken = $_SESSION['facebook_access_token'];
-    }else{
+    } else {
         $accessToken = $helper->getAccessToken();
     }
-} catch(FacebookResponseException $e) {
+} catch (FacebookResponseException $e) {
     echo 'Graph retornou um erro: ' . $e->getMessage();
     exit;
-} catch(FacebookSDKException $e) {
+} catch (FacebookSDKException $e) {
     echo 'Facebook SDK retornou um erro: ' . $e->getMessage();
     exit;
 }

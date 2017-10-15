@@ -13,7 +13,7 @@
         <a href="#"><h3>{{facebook.name}}</h3></a>
         <p>Um amante de TI, fanático por SERIADOS e apaixonado por GAMES.</p>
         <ul class="fh5co-social">
-           <li><a ng-href="{{facebook.link}}"><span class="icon-facebook-with-circle"></span></a></li>
+           <li><a ng-href="{{facebook.link}}" target="_blank"><span class="icon-facebook-with-circle"></span></a></li>
         </ul>
     </div>
 
@@ -44,12 +44,12 @@
             </form>
         </div>
         <p id="sair">
-            <a ng-click="">
+            <a ng-click="logout()">
                 <span class="glyphicon glyphicon-log-out"></span> SAIR
             </a>
         </p>
     </div>
-</div> -->
+</div>
 <!--Navbar-->
 
 <nav class="gtco-nav" role="navigation">
@@ -69,18 +69,16 @@
                             </a>
                         </li>
                         <li class="nav navbar-nav navbar-right  ">
-                            <button type="button" ng-click="facebookLogin()" class="login">
+                            <button type="button" ng-click="login()" class="login">
                                 <div class="sign">
-                                    <img src="frontend/assets/img/fb.png">Logar com JS
+                                    <img src="frontend/assets/img/fb.svg"> Logar com JS
                                 </div>
                             </button>
                         </li> -->
                         <li class="nav navbar-nav navbar-right">
-
-                          <?php include '../../backend/php/index.php';
-                           //include '../../index.html';
-                           echo $mostrar;
-                          ?>
+                            <?php include '../../backend/php/index.php';
+                            echo $mostrar;
+                            ?>
 
                         </li>
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>

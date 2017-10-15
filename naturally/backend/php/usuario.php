@@ -17,40 +17,39 @@ class Usuario
     function __construct()
     {
         if (!isset($this->db)) {
-            // Conecta com o banco
-            $conn = new mysqli($this->dbHost, $this->dbNomeDeUsuario, $this->dbSenha, $this->dbNome);
-            if ($conn->connect_error) {
-                die("Falha ao conectar com MySQL <br>" . $conn->connect_error);
+            /* conecta com o banco
+            phpinfo(); */
+            $conexao = new mysqli($this->dbHost, $this->dbNomeDeUsuario, $this->dbSenha, $this->dbNome);
+            if ($conexao->connect_error) {
+                die("Falha ao conectar com MySQL <br>" . $conexao->connect_error);
             } else {
-                $this->db = $conn;
+                $this->db = $conexao;
             }
         }
     }
 
-    function checkUser($userData = array())
+    function checkUser($dadosUsuario = array())
     {
-        if (!empty($userData)) {
-            // checa se já existe dados do usuário  no banco
-            $prevQuery = "SELECT * FROM " . $this->TabelaUsuario . " WHERE oauth_provider = '" . $userData['oauth_provider'] . "' AND oauth_uid = '" . $userData['oauth_uid'] . "'";
+        if (!empty($dadosUsuario)) {
+            // concatena nome e sobrenome
+            //$name = $dadosUsuario['first_name']. " " . $dadosUsuario['last_name'];
+            $prevQuery = "SELECT * FROM " . $this->TabelaUsuario . " WHERE oauth_provider = '" . $dadosUsuario['oauth_provider'] . "' AND oauth_uid = '" . $dadosUsuario['oauth_uid'] . "'";
             $prevResult = $this->db->query($prevQuery);
             if ($prevResult->num_rows > 0) {
-                // update dados do usuário caso já exista
-                $query = "UPDATE " . $this->TabelaUsuario . " SET first_name = '" . $userData['first_name'] . "', last_name = '" . $userData['last_name'] . "', email = '" . $userData['email'] . "', gender = '" . $userData['gender'] . "', locale = '" . $userData['locale'] . "', picture = '" . $userData['picture'] . "', link = '" . $userData['link'] . "', modified = '" . date("Y-m-d H:i:s") . "' WHERE oauth_provider = '" . $userData['oauth_provider'] . "' AND oauth_uid = '" . $userData['oauth_uid'] . "'";
+                // atualiza dados do usuário caso já exista no banco
+                $query = "UPDATE " . $this->TabelaUsuario . " SET first_name = '" . $dadosUsuario['first_name'] . "', last_name = '" . $dadosUsuario['last_name'] . ", name ='" . $dadosUsuario['name'] . "', email = '" . $dadosUsuario['email'] . "', gender = '" . $dadosUsuario['gender'] . "', locale = '" . $dadosUsuario['locale'] . "', picture = '" . $dadosUsuario['picture'] . "', link = '" . $dadosUsuario['link'] . "', modified = '" . date("Y-m-d H:i:s") . "' WHERE oauth_provider = '" . $dadosUsuario['oauth_provider'] . "' AND oauth_uid = '" . $dadosUsuario['oauth_uid'] . "'";
                 $update = $this->db->query($query);
             } else {
                 // insere dados do usuário
-                $query = "INSERT INTO " . $this->TabelaUsuario . " SET oauth_provider = '" . $userData['oauth_provider'] . "', oauth_uid = '" . $userData['oauth_uid'] . "', first_name = '" . $userData['first_name'] . "', last_name = '" . $userData['last_name'] . "', email = '" . $userData['email'] . "', gender = '" . $userData['gender'] . "', locale = '" . $userData['locale'] . "', picture = '" . $userData['picture'] . "', link = '" . $userData['link'] . "', created = '" . date("Y-m-d H:i:s") . "', modified = '" . date("Y-m-d H:i:s") . "'";
+                $query = "INSERT INTO " . $this->TabelaUsuario . " SET oauth_provider = '" . $dadosUsuario['oauth_provider'] . "', oauth_uid = '" . $dadosUsuario['oauth_uid'] . "', name = '" . $dadosUsuario['name'] . "', first_name = '" . $dadosUsuario['first_name'] . "', last_name = '" . $dadosUsuario['last_name'] . "', email = '" . $dadosUsuario['email'] . "', gender = '" . $dadosUsuario['gender'] . "', locale = '" . $dadosUsuario['locale'] . "', picture = '" . $dadosUsuario['picture'] . "', link = '" . $dadosUsuario['link'] . "', created = '" . date("Y-m-d H:i:s") . "', modified = '" . date("Y-m-d H:i:s") . "'";
                 $insert = $this->db->query($query);
             }
 
             // pega dados do usuário no banco 
             $result = $this->db->query($prevQuery);
-            $userData = $result->fetch_assoc();
+            $dadosUsuario = $result->fetch_assoc();
         }
 
-        // retorna dados do usuário
-        return $userData;
+        return $dadosUsuario;  // retorna dados do usuário
     }
 }
-
-?>

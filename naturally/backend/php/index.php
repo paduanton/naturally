@@ -22,37 +22,37 @@ if (isset($accessToken)) {
         $longLivedAccessToken = $oAuth2Client->getLongLivedAccessToken($_SESSION['facebook_access_token']);
         $_SESSION['facebook_access_token'] = (string)$longLivedAccessToken;
 
-        // Set default access token to be used in script
+        // atribui token de acesso padrão para ser usado no script
         $fb->setDefaultAccessToken($_SESSION['facebook_access_token']);
     }
-
-    // Redirect the user back to the same page if url has "code" parameter in query string
+    // redireciona para pagina inicial se a url tiver parametro 'code' na query string
     if (isset($_GET['code'])) {
         header('Location: http://localhost/');
     }
 
-    // Getting user facebook profile info
+    // pegando informações do perfil do facebook
     try {
-        $profileRequest = $fb->get('/me?fields=name,first_name,last_name,email,link,gender,locale,picture.width(800).height(800)');
+        $profileRequest = $fb->get('/me?fields=name,first_name,last_name,email,link,gender,locale,picture.width(1000).height(1000)');
         $fbUserProfile = $profileRequest->getGraphNode()->asArray();
     } catch (FacebookResponseException $e) {
-        echo 'Graph returned an error: ' . $e->getMessage();
+        echo 'Graph retornou um erro: ' . $e->getMessage();
         session_destroy();
-        // Redirect user back to app login page
+        // redireciona usuário de volta a pagina de login
         header("Location: ./");
         exit;
     } catch (FacebookSDKException $e) {
-        echo 'Facebook SDK returned an error: ' . $e->getMessage();
+        echo 'Facebook SDK retornou um erro: ' . $e->getMessage();
         exit;
     }
 
-    // Initialize User class
+    // inicializa classe usuário
     $user = new Usuario();
 
-    // Insert or update user data to the database
-    $fbUserData = array(
+    // insere ou atualiza dados do usuário no banco
+    $fbDadosUsuario = array(
         'oauth_provider' => 'facebook',
         'oauth_uid' => $fbUserProfile['id'],
+        'name' => $fbUserProfile['name'],
         'first_name' => $fbUserProfile['first_name'],
         'last_name' => $fbUserProfile['last_name'],
         'email' => $fbUserProfile['email'],
@@ -61,26 +61,26 @@ if (isset($accessToken)) {
         'picture' => $fbUserProfile['picture']['url'],
         'link' => $fbUserProfile['link']
     );
-    $userData = $user->checkUser($fbUserData);
+    $dadosUsuario = $user->checkUser($fbDadosUsuario);
 
-    // Put user data into session
-    $_SESSION['userData'] = $userData;
+    // coloca dados do usuário na sessão
+    $_SESSION['userData'] = $dadosUsuario;
 
-    // Get logout url                                         $redirectURL?
-    $logoutURL = $helper->getLogoutUrl($accessToken, 'http://localhost/backend/php/logout.php');
+    // pega url de login                       http://localhost/backend/php/logout.php?
+    $logoutURL = $helper->getLogoutUrl($accessToken, $redirectURL . 'logout.php');
 
-    // Render facebook profile data
-    if (!empty($userData)) {
+    // fornece dados do perfil do facebook
+    if (!empty($dadosUsuario)) {
         /* $mostrar = '<h1>Facebook Profile Details </h1>';
-                 $mostrar .= '<br/>Facebook ID : ' . $userData['oauth_uid'];
-                 $mostrar .= '<br/>Email : ' . $userData['email'];
-                 $mostrar .= '<br/>Gender : ' . $userData['gender'];
-                 $mostrar .= '<br/>Locale : ' . $userData['locale'];
+                 $mostrar .= '<br/>Facebook ID : ' . $dadosUsuario['oauth_uid'];
+                 $mostrar .= '<br/>Email : ' . $dadosUsuario['email'];
+                 $mostrar .= '<br/>Gender : ' . $dadosUsuario['gender'];
+                 $mostrar .= '<br/>Locale : ' . $dadosUsuario['locale'];
                  $mostrar .= '<br/>Logged in with : Facebook';
-                 $mostrar .= '<br/><a href="' . $userData['link'] . '" target="_blank">Click to Visit Facebook Page</a>';
+                 $mostrar .= '<br/><a href="' . $dadosUsuario['link'] . '" target="_blank">Click to Visit Facebook Page</a>';
                  $mostrar .= '<br/>Logout from <a href="' . $logoutURL . '">Facebook</a>';*/
         $mostrar = '<a class="js-perfil-toggle perfil-toggle">
-                         <img ng-src="' . $userData['picture'] . '" class="img-circle"> ' . $userData['first_name'] . ' ' . $userData['last_name'] . '
+                         <img ng-src="' . $dadosUsuario['picture'] . '" class="img-circle"> ' . $dadosUsuario['name'].'
                    </a>
 <div id="fh5co-offcanvas">
     <a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas"><span><i
@@ -90,14 +90,14 @@ if (isset($accessToken)) {
     <div class="fh5co-bio">
         <figure>
             <a href="#">
-                <img ng-src="' . $userData['picture'] . '" class="img-responsive">
+                <img ng-src="' . $dadosUsuario['picture'] . '" class="img-responsive">
             </a>
         </figure>
         <h3 class="heading">Sobre mim</h3>
-        <a href="#"><h3>' . $userData['first_name'] . ' ' . $userData['last_name'] . '</h3></a>
+        <a href="#"><h3>' . $dadosUsuario['name'].'</h3></a>
         <p>Um amante de TI, fanático por SERIADOS e apaixonado por GAMES.</p>
         <ul class="fh5co-social">
-           <li><a ng-href="' . $userData['link'] . '" target="_blank"><i class="icon-facebook"></i></a></li>
+           <li><a ng-href="' . $dadosUsuario['link'] . '" target="_blank"><i class="icon-facebook"></i></a></li>
         </ul>
     </div>
 
@@ -110,7 +110,7 @@ if (isset($accessToken)) {
                 </a>
             </h3>
             <ul>
-                <li class=""><p class="text-muted">' . $userData['email'] . '</p></li>
+                <li class=""><p class="text-muted">' . $dadosUsuario['email'] . '</p></li>
                 <hr/>
                 <li class="glyphicon glyphicon-heart-empty"><a href="#"> Seguindo</a></li>
                 <li class="glyphicon glyphicon-heart"><a href="#"> Seguidores</a></li>
@@ -135,14 +135,11 @@ if (isset($accessToken)) {
     </div>
 </div>
 ';
-       //header( "Refresh:5; url=http://localhost/", true, 303);
-
     } else {
         $mostrar = '<h3 style="color:red">Algum problema ocorreu, por favor tente de novo.</h3>';
     }
 
 } else {
-    //'http://' . $_SERVER['HTTP_HOST']
     // pegar url de login
     $loginURL = $helper->getLoginUrl($redirectURL, $fbPermissions);
     // facebook login button
@@ -151,10 +148,9 @@ if (isset($accessToken)) {
     <button type="button" class="login">
     <!--<span class="glyphicon glyphicon-log-in"></span> -->
     <div class="sign">
-    <img src="frontend/assets/img/fb.png">Logar com PHP
+    <img src="frontend/assets/img/fb.svg"> Logar com PHP
     </div>
     </button>
     </a>';
 }
 ?>
-

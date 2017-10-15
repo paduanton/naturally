@@ -1,14 +1,15 @@
 var app = angular.module('appNaturally', ['ngRoute']);
 
 app.controller('naturallyController', ['$scope', function ($scope) {
+
     $scope.facebook = {
         username: "",
         email: ""
     };
-    $scope.facebookLogin = function () {
+    $scope.login = function () {
         FB.login(function (response) {
            if(response.authResponse) {
-               FB.api('/me', 'GET', {fields: 'email, first_name, last_name, name, id, link, picture.width(800).height(800)'}, function(response) {
+               FB.api('/me', 'GET', {fields: 'email, first_name, last_name, name, gender, locale, id, link, picture.width(1000).height(1000)'}, function(response) {
                    $scope.$apply(function () {
                        $scope.facebook.name = response.name;
                        $scope.facebook.first_name = response.first_name;
@@ -16,6 +17,8 @@ app.controller('naturallyController', ['$scope', function ($scope) {
                        $scope.facebook.email = response.email;
                        $scope.facebook.image = response.picture.data.url;
                        $scope.facebook.link = response.link;
+                       $scope.facebook.gender = response.gender;
+                       $scope.facebook.locale = response.locale;
                    })
                });
            } else {
