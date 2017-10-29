@@ -5,9 +5,9 @@
  * Date: 08/10/2017
  * Time: 17:07
  */
-//if(!session_id()){
+if(!session_id()){
 session_start();
-//}
+}
 
 // require_once __DIR__ . 'lib/Facebook/autoload.php';
 require_once 'lib/php-graph-sdk-5.x/src/Facebook/autoload.php';

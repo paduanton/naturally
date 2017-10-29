@@ -32,13 +32,13 @@ if (isset($accessToken)) {
 
     // pegando informações do perfil do facebook
     try {
-        $profileRequest = $fb->get('/me?fields=name,first_name,last_name,email,link,gender,locale,picture.width(1000).height(1000)');
-        $fbUserProfile = $profileRequest->getGraphNode()->asArray();
+        $requisicaoPerfil = $fb->get('/me?fields=name,first_name, last_name,email,link,gender,locale,picture.width(1000).height(1000)');
+        $perfilDoUsuario = $requisicaoPerfil->getGraphNode()->asArray();
     } catch (FacebookResponseException $e) {
         echo 'Graph retornou um erro: ' . $e->getMessage();
         session_destroy();
         // redireciona usuário de volta a pagina de login
-        header("Location: ./");
+        header('Location: http://localhost/');
         exit;
     } catch (FacebookSDKException $e) {
         echo 'Facebook SDK retornou um erro: ' . $e->getMessage();
@@ -49,38 +49,41 @@ if (isset($accessToken)) {
     $user = new Usuario();
 
     // insere ou atualiza dados do usuário no banco
-    $fbDadosUsuario = array(
+    $fbdadosDoUsuario = array(
         'oauth_provider' => 'facebook',
-        'oauth_uid' => $fbUserProfile['id'],
-        'name' => $fbUserProfile['name'],
-        'first_name' => $fbUserProfile['first_name'],
-        'last_name' => $fbUserProfile['last_name'],
-        'email' => $fbUserProfile['email'],
-        'gender' => $fbUserProfile['gender'],
-        'locale' => $fbUserProfile['locale'],
-        'picture' => $fbUserProfile['picture']['url'],
-        'link' => $fbUserProfile['link']
+        'facebook_id' => $perfilDoUsuario['id'],
+        'nome_completo' => $perfilDoUsuario['name'],
+        'primeiro_nome' => $perfilDoUsuario['first_name'],
+        'ultimo_nome' => $perfilDoUsuario['last_name'],
+        'email' => $perfilDoUsuario['email'],
+        'genero' => $perfilDoUsuario['gender'],
+        'localizacao' => $perfilDoUsuario['locale'],
+        'foto_perfil' => $perfilDoUsuario['picture']['url'],
+        'link_perfil' => $perfilDoUsuario['link']
     );
-    $dadosUsuario = $user->checkUser($fbDadosUsuario);
+    $dadosDoUsuario = $user->checkUser($fbdadosDoUsuario);
 
     // coloca dados do usuário na sessão
-    $_SESSION['userData'] = $dadosUsuario;
+    $_SESSION['userData'] = $dadosDoUsuario;
 
     // pega url de login                       http://localhost/backend/php/logout.php?
     $logoutURL = $helper->getLogoutUrl($accessToken, $redirectURL . 'logout.php');
 
     // fornece dados do perfil do facebook
-    if (!empty($dadosUsuario)) {
+    if (!empty($dadosDoUsuario)) {
+        /*if($dadosDoUsuario['primeiro_nome'] == $dadosDoUsuario['ultimo_nome']) {
+            $dadosDoUsuario['nome'] = $dadosDoUsuario['primeiro_nome'];
+        }
         /* $mostrar = '<h1>Facebook Profile Details </h1>';
-                 $mostrar .= '<br/>Facebook ID : ' . $dadosUsuario['oauth_uid'];
-                 $mostrar .= '<br/>Email : ' . $dadosUsuario['email'];
-                 $mostrar .= '<br/>Gender : ' . $dadosUsuario['gender'];
-                 $mostrar .= '<br/>Locale : ' . $dadosUsuario['locale'];
+                 $mostrar .= '<br/>Facebook ID : ' . $dadosDoUsuario['oauth_uid'];
+                 $mostrar .= '<br/>Email : ' . $dadosDoUsuario['email'];
+                 $mostrar .= '<br/>Gender : ' . $dadosDoUsuario['gender'];
+                 $mostrar .= '<br/>Locale : ' . $dadosDoUsuario['locale'];
                  $mostrar .= '<br/>Logged in with : Facebook';
-                 $mostrar .= '<br/><a href="' . $dadosUsuario['link'] . '" target="_blank">Click to Visit Facebook Page</a>';
+                 $mostrar .= '<br/><a href="' . $dadosDoUsuario['link'] . '" target="_blank">Click to Visit Facebook Page</a>';
                  $mostrar .= '<br/>Logout from <a href="' . $logoutURL . '">Facebook</a>';*/
         $mostrar = '<a class="js-perfil-toggle perfil-toggle">
-                         <img ng-src="' . $dadosUsuario['picture'] . '" class="img-circle"> ' . $dadosUsuario['name'].'
+                         <img ng-src="' . $dadosDoUsuario['foto_perfil'] . '" class="img-circle"> ' . $dadosDoUsuario['primeiro_nome'] . '
                    </a>
 <div id="fh5co-offcanvas">
     <a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas"><span><i
@@ -90,14 +93,14 @@ if (isset($accessToken)) {
     <div class="fh5co-bio">
         <figure>
             <a href="#">
-                <img ng-src="' . $dadosUsuario['picture'] . '" class="img-responsive">
+                <img ng-src="' . $dadosDoUsuario['foto_perfil'] . '" class="img-responsive">
             </a>
         </figure>
         <h3 class="heading">Sobre mim</h3>
-        <a href="#"><h3>' . $dadosUsuario['name'].'</h3></a>
+        <a href="#"><h3>' . $dadosDoUsuario['primeiro_nome'] . '</h3></a>
         <p>Um amante de TI, fanático por SERIADOS e apaixonado por GAMES.</p>
         <ul class="fh5co-social">
-           <li><a ng-href="' . $dadosUsuario['link'] . '" target="_blank"><i class="icon-facebook"></i></a></li>
+           <li><a ng-href="' . $dadosDoUsuario['link_perfil'] . '" target="_blank"><i class="icon-facebook"></i></a></li>
         </ul>
     </div>
 
@@ -110,7 +113,7 @@ if (isset($accessToken)) {
                 </a>
             </h3>
             <ul>
-                <li class=""><p class="text-muted">' . $dadosUsuario['email'] . '</p></li>
+                <li class=""><p class="text-muted">' . $dadosDoUsuario['email'] . '</p></li>
                 <hr/>
                 <li class="glyphicon glyphicon-heart-empty"><a href="#"> Seguindo</a></li>
                 <li class="glyphicon glyphicon-heart"><a href="#"> Seguidores</a></li>

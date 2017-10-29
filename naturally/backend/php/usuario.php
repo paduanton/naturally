@@ -31,17 +31,22 @@ class Usuario
     function checkUser($dadosUsuario = array())
     {
         if (!empty($dadosUsuario)) {
-            // concatena nome e sobrenome
-            //$name = $dadosUsuario['first_name']. " " . $dadosUsuario['last_name'];
-            $prevQuery = "SELECT * FROM " . $this->TabelaUsuario . " WHERE oauth_provider = '" . $dadosUsuario['oauth_provider'] . "' AND oauth_uid = '" . $dadosUsuario['oauth_uid'] . "'";
+            // concatena nome e sobrenome                                                 oauth_uid
+            $nome = $dadosUsuario['primeiro_nome'] . " " . $dadosUsuario['ultimo_nome'];
+            $prevQuery = "SELECT * FROM " . $this->TabelaUsuario . " WHERE oauth_provider = '" . $dadosUsuario['oauth_provider'] . "' AND facebook_id = '" . $dadosUsuario['facebook_id'] . "'";
             $prevResult = $this->db->query($prevQuery);
+
+            /*if ($dadosUsuario['primeiro_nome'] == $dadosUsuario['ultimo_nome']) {
+                $dadosUsuario['ultimo_nome'] = "";
+            }*/
+
             if ($prevResult->num_rows > 0) {
                 // atualiza dados do usuário caso já exista no banco
-                $query = "UPDATE " . $this->TabelaUsuario . " SET first_name = '" . $dadosUsuario['first_name'] . "', last_name = '" . $dadosUsuario['last_name'] . ", name ='" . $dadosUsuario['name'] . "', email = '" . $dadosUsuario['email'] . "', gender = '" . $dadosUsuario['gender'] . "', locale = '" . $dadosUsuario['locale'] . "', picture = '" . $dadosUsuario['picture'] . "', link = '" . $dadosUsuario['link'] . "', modified = '" . date("Y-m-d H:i:s") . "' WHERE oauth_provider = '" . $dadosUsuario['oauth_provider'] . "' AND oauth_uid = '" . $dadosUsuario['oauth_uid'] . "'";
+                $query = "UPDATE " . $this->TabelaUsuario . " SET  nome = '" . $nome . "', primeiro_nome = '" . $dadosUsuario['primeiro_nome'] . "', ultimo_nome = '" . $dadosUsuario['ultimo_nome'] . ", nome_completo ='" . $dadosUsuario['nome_completo'] . "', email = '" . $dadosUsuario['email'] . "', genero = '" . $dadosUsuario['genero'] . "', localizacao = '" . $dadosUsuario['localizacao'] . "', foto_perfil = '" . $dadosUsuario['foto_perfil'] . "', link_perfil = '" . $dadosUsuario['link_perfil'] . "', modificado = now() WHERE oauth_provider = '" . $dadosUsuario['oauth_provider'] . "' AND facebook_id = '" . $dadosUsuario['facebook_id'] . "'";
                 $update = $this->db->query($query);
             } else {
                 // insere dados do usuário
-                $query = "INSERT INTO " . $this->TabelaUsuario . " SET oauth_provider = '" . $dadosUsuario['oauth_provider'] . "', oauth_uid = '" . $dadosUsuario['oauth_uid'] . "', name = '" . $dadosUsuario['name'] . "', first_name = '" . $dadosUsuario['first_name'] . "', last_name = '" . $dadosUsuario['last_name'] . "', email = '" . $dadosUsuario['email'] . "', gender = '" . $dadosUsuario['gender'] . "', locale = '" . $dadosUsuario['locale'] . "', picture = '" . $dadosUsuario['picture'] . "', link = '" . $dadosUsuario['link'] . "', created = '" . date("Y-m-d H:i:s") . "', modified = '" . date("Y-m-d H:i:s") . "'";
+                $query = "INSERT INTO " . $this->TabelaUsuario . " SET oauth_provider = '" . $dadosUsuario['oauth_provider'] . "', facebook_id = '" . $dadosUsuario['facebook_id'] . "', nome = '" . $nome . "', nome_completo = '" . $dadosUsuario['nome_completo'] . "', primeiro_nome = '" . $dadosUsuario['primeiro_nome'] . "', ultimo_nome = '" . $dadosUsuario['ultimo_nome'] . "', email = '" . $dadosUsuario['email'] . "', genero = '" . $dadosUsuario['genero'] . "', localizacao = '" . $dadosUsuario['localizacao'] . "', foto_perfil = '" . $dadosUsuario['foto_perfil'] . "', link_perfil = '" . $dadosUsuario['link_perfil'] . "', criado = now(), modificado = now()";
                 $insert = $this->db->query($query);
             }
 

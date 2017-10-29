@@ -62,7 +62,7 @@
             <div class="col-xs-10 text-right menu-1">
                 <ul>
                     <div class="navbar-menu-items wow fadeIn">
-                        <!--<li class="nav navbar-nav navbar-right">
+                        <li class="nav navbar-nav navbar-right">
                             <a class="js-perfil-toggle perfil-toggle">
                                 <img ng-src="{{facebook.image}}" class="img-circle">
                                 {{facebook.name}}
@@ -74,12 +74,13 @@
                                     <img src="frontend/assets/img/fb.svg"> Logar com JS
                                 </div>
                             </button>
-                        </li> -->
+                            <!-- botão continuar como ...
+                            <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>-->
+                        </li>
                         <li class="nav navbar-nav navbar-right">
                             <?php include '../../backend/php/index.php';
                             echo $mostrar;
                             ?>
-
                         </li>
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>
                         </li>
