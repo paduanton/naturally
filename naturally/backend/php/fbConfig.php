@@ -5,8 +5,8 @@
  * Date: 08/10/2017
  * Time: 17:07
  */
-if(!session_id()){
-session_start();
+if (!session_id()) {
+    session_start();
 }
 
 // require_once __DIR__ . 'lib/Facebook/autoload.php';

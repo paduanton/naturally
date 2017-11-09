@@ -1,6 +1,7 @@
-app.config(['$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+
     $routeProvider
-        // index
+    // index
         .when("/", {
             templateUrl: "home.html",
             controller: "HomeController"
@@ -59,4 +60,9 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: "VegetarianosController"
         })
         .otherwise({redirectTo: "/"});
+
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: true
+    });
 }]);

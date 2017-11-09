@@ -20,7 +20,7 @@
     <div class="fh5co-menu">
         <div class="fh5co-box">
             <h3 class="heading">
-                <a ng-href="/#!/perfil">
+                <a ng-href="/perfil">
                     <li class="glyphicon glyphicon-user"></li>
                     Perfil
                 </a>
@@ -56,7 +56,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-2 text-left">
-                <div id="gtco-logo"><a ng-href="/#!/">Naturally<span>.</span></a></div>
+                <div id="gtco-logo"><a ng-href="/">Naturally<span>.</span></a></div>
             </div>
             <span></span>
             <div class="col-xs-10 text-right menu-1">
@@ -81,25 +81,25 @@
                             <?php include '../../backend/php/index.php';
                             echo $mostrar;
                             ?>
-                        </li>
-                        <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>
+                        </li>                                           <!-- ng-href="/#!/contato"  "/contato" -->
+                        <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="contato">Contato</a>
                         </li>
                         <li class="nav navbar-nav navbar-right  "><a
-                                ng-href="/#!/sobre">Naturally</a>
+                                ng-href="sobre">Naturally</a>
                         </li>
                         <li class="has-dropdown nav navbar-nav navbar-right  ">
-                            <a ng-href="/#!/">Explorar</a>
+                            <a ng-href="/">Explorar</a>
                             <ul class="dropdown">
-                                <li><a ng-href="/#!/tendencias">Tendências</a></li>
-                                <li><a ng-href="/#!/veganos">Veganos</a></li>
-                                <li><a ng-href="/#!/vegetarianos">Vegetarianos</a></li>
+                                <li><a ng-href="/tendencias">Tendências</a></li>
+                                <li><a ng-href="/veganos">Veganos</a></li>
+                                <li><a ng-href="/vegetarianos">Vegetarianos</a></li>
                                 <li><a href="frontend/conteudo/semgluten.html">Sem Glúten</a></li>
                                 <li><a href="frontend/conteudo/diabeticos.html">Diabéticos</a></li>
                                 <li><a href="frontend/conteudo/semlactose.html">Sem Lactose</a></li>
                                 <li><a href="frontend/conteudo/fitness.html">Fitness</a></li>
                             </ul>
                         </li>
-                        <li class="nav navbar-nav navbar-right"><a class="active" ng-href="/#!/feed">Feed</a>
+                        <li class="nav navbar-nav navbar-right"><a class="active" ng-href="/feed">Feed</a>
                         </li>
                     </div> <!--fim dos itens que vão sumir-->
                     <li>

@@ -22,4 +22,5 @@ ALTER TABLE usuario ADD nome varchar(100) COLLATE utf8_unicode_ci NOT NULL AFTER
 ALTER DATABASE naturally  COLLATE = latin1_swedish_ci;
 -- UPDATE usuario SET name = concat(first_name, " ", last_name);
 -- DROP DATABASE naturally;
+
 select * from usuario

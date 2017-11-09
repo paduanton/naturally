@@ -15,6 +15,8 @@ unset($_SESSION['userData']);
 
 $cookie_name = session_name();
 
+session_unset();
+
 // elimina todas as informações relacionadas à sessão atual
 session_destroy();
 
