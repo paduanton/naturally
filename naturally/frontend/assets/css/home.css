@@ -1,6 +1,6 @@
 
 #fh5co-features {
-    background: #FEE856;
+    background:#afe8ee ;
 }
 
 #fh5co-features .services-padding {
@@ -413,6 +413,8 @@
     font-family: 'Amatic SC', cursive;
 }
 
+
+
 #servico span {
     font-size: 18px;
     color: rgba(114, 114, 114, 0.8);
@@ -486,7 +488,9 @@
         margin: 0 auto 30px auto;
     }
 }
-
+.homebotao btn{
+    font-family: 'Poiret One', cursive;
+}
 .services .icon i {
     display: table-cell;
     vertical-align: middle;

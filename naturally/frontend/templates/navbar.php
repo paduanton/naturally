@@ -1,8 +1,12 @@
 <!--<div id="fh5co-offcanvas">
-    <a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas"><span><i
-                class="icon-cross"><i
-                    class="icon-cross"></i><i
-                    class="icon-cross"></i></i></span></a>
+    <a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span>
+            <i class="icon-cross">
+                <i class="icon-cross"></i>
+                <i class="icon-cross"></i>
+            </i>
+        </span>
+    </a>
     <div class="fh5co-bio">
         <figure>
             <a href="#">
@@ -13,7 +17,7 @@
         <a href="#"><h3>{{facebook.name}}</h3></a>
         <p>Um amante de TI, fanático por SERIADOS e apaixonado por GAMES.</p>
         <ul class="fh5co-social">
-           <li><a ng-href="{{facebook.link}}" target="_blank"><span class="icon-facebook-with-circle"></span></a></li>
+            <li><a ng-href="{{facebook.link}}" target="_blank"><span class="icon-facebook-with-circle"></span></a></li>
         </ul>
     </div>
 
@@ -85,7 +89,7 @@
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="contato">Contato</a>
                         </li>
                         <li class="nav navbar-nav navbar-right  "><a
-                                ng-href="sobre">Naturally</a>
+                                    ng-href="sobre">Naturally</a>
                         </li>
                         <li class="has-dropdown nav navbar-nav navbar-right  ">
                             <a ng-href="/">Explorar</a>
@@ -99,7 +103,7 @@
                                 <li><a href="frontend/conteudo/fitness.html">Fitness</a></li>
                             </ul>
                         </li>
-                        <li class="nav navbar-nav navbar-right"><a class="active" ng-href="/feed">Feed</a>
+                        <li class="nav navbar-nav navbar-right"><a class="active" ng-href="/#!/feed">Feed</a>
                         </li>
                     </div> <!--fim dos itens que vão sumir-->
                     <li>

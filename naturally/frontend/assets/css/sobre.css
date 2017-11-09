@@ -210,7 +210,7 @@ article a:hover {
 
 #gtco-maine {
     width: 100%;
-    background-color: #e4ff00;
+    background: rgba(255, 151, 148, 0.7);
     float: left;
 }
 
@@ -373,7 +373,7 @@ article .gtco-highlight {
 }
 
 .gtco-cover {
-    height: 833px;
+    height: 450px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -398,14 +398,14 @@ article .gtco-highlight {
 
 @media screen and (max-width: 768px) {
     .gtco-cover {
-        height: 600px;
+        height: 400px;
     }
 }
 
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
     z-index: 9;
-    height: 900px;
+    height: 600px;
     display: table;
     width: 100%;
 }
