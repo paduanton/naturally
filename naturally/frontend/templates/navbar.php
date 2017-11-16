@@ -86,7 +86,7 @@
                             echo $mostrar;
                             ?>
                         </li>                                           <!-- ng-href="/#!/contato"  "/contato" -->
-                        <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="contato">Contato</a>
+                        <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>
                         </li>
                         <li class="nav navbar-nav navbar-right  "><a
                                     ng-href="sobre">Naturally</a>
@@ -97,10 +97,10 @@
                                 <li><a ng-href="/tendencias">Tendências</a></li>
                                 <li><a ng-href="/veganos">Veganos</a></li>
                                 <li><a ng-href="/vegetarianos">Vegetarianos</a></li>
-                                <li><a href="frontend/conteudo/semgluten.html">Sem Glúten</a></li>
-                                <li><a href="frontend/conteudo/diabeticos.html">Diabéticos</a></li>
-                                <li><a href="frontend/conteudo/semlactose.html">Sem Lactose</a></li>
-                                <li><a href="frontend/conteudo/fitness.html">Fitness</a></li>
+                                <li><a href="frontend/conteudo//#!/semgluten.html">Sem Glúten</a></li>
+                                <li><a href="frontend/conteudo/#!/diabeticos.html">Diabéticos</a></li>
+                                <li><a href="frontend/conteudo/#!/semlactose.html">Sem Lactose</a></li>
+                                <li><a href="frontend/conteudo/#!/fitness.html">Fitness</a></li>
                             </ul>
                         </li>
                         <li class="nav navbar-nav navbar-right"><a class="active" ng-href="/#!/feed">Feed</a>
