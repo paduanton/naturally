@@ -181,13 +181,13 @@ body {
 }
 
 #fh5co-header .overlay,
-.fh5co-cover .overlay {
+.fh5co-cover .overlay .container{
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #ad37f2 !important;
+    background-color: rgba(255, 118, 95, 0.9)!important;
 }
 
 .fh5co-cover .profile-thumb img {
@@ -201,7 +201,7 @@ body {
 
 .profilenav-list {
     height: 70px;
-    background-color: #f2f2f2;
+    background: #30dfdb;
 }
 
 .profilenav-list blockquote {
@@ -220,6 +220,8 @@ body {
     position: relative;
     top: 2.1vh;
     border-radius: 30px;
+    background-color: #30dfdb;
+
 }
 
 .info {
