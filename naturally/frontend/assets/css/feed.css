@@ -263,8 +263,8 @@
 }
 
 
-.gtco-cover.display-t .gtco-cover-sm,
-.gtco-cover .display-tc .gtco-cover-sm {/*não é este*/
+#gtco-header .gtco-cover.display-t .gtco-cover-sm,
+#gtco-header .gtco-cover .display-tc .gtco-cover-sm {/*não é este*/
     height: 1000px;
     display: table;
     width: 100%;
