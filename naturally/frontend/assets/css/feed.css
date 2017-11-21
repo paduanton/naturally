@@ -222,7 +222,7 @@
 }
 
 .gtco-cover {
-    height: 400px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -232,6 +232,7 @@
 
 .gtco-cover .overlay {
     z-index: 0;
+    height: 500px;
     position: absolute;
     bottom: 0;
     top: 0;
@@ -263,7 +264,7 @@
 }
 
 .gtco-cover.gtco-cover-sm {
-    height: 700px;
+    height: 500px;
 }
 
 @media screen and (max-width: 768px) {
@@ -274,7 +275,7 @@
 
 .gtco-cover.gtco-cover-sm .display-t,
 .gtco-cover.gtco-cover-sm .display-tc {
-    height: 500px;
+    height: 600px;
     display: table;
     width: 100%;
 }
