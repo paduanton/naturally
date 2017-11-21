@@ -278,12 +278,14 @@
     height: 600px;
     display: table;
     width: 100%;
+    position: relative;
+    top: 100px;
 }
 
 @media screen and (max-width: 768px) {
     .gtco-cover.gtco-cover-sm .display-t,
     .gtco-cover.gtco-cover-sm .display-tc {
-        height: 400px;
+        height: 600px;
     }
 }
 
