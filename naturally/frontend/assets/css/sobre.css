@@ -210,7 +210,7 @@ article a:hover {
 
 #gtco-maine {
     width: 100%;
-    background: rgba(255, 151, 148, 0.7);
+    background: rgb(255, 127, 80);
     float: left;
 }
 
@@ -388,7 +388,7 @@ article .gtco-highlight {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 151, 148, 0.7);
+    background: rgb(255, 127, 80);
 }
 
 .gtco-cover > .gtco-container {

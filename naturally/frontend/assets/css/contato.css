@@ -21,7 +21,7 @@
 
 #gtco-maine {
     width: 100%;
-    background-color: #DD356E;
+    background-color: #ff7f50;
     float: left;
 }
 
@@ -151,7 +151,7 @@ article .content-article {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(145, 145, 145, 0.68);
+    background: rgb(255, 127, 80);
 }
 
 @media screen and (max-width: 768px) {
