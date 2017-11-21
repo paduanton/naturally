@@ -232,7 +232,7 @@
 
 .gtco-cover .overlay {
     z-index: 0;
-    height: 500px;
+    height: 600px;
     position: absolute;
     bottom: 0;
     top: 0;
@@ -251,7 +251,7 @@
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
     z-index: 9;
-    height: 500px;
+    height: 600px;
     display: table;
     width: 100%;
 }
