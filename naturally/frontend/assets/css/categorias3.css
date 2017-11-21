@@ -222,7 +222,7 @@
 }
 
 .gtco-cover {
-    height: 900px;
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -250,7 +250,7 @@
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
     z-index: 9;
-    height: 900px;
+    height: 700px;
     display: table;
     width: 100%;
 }
