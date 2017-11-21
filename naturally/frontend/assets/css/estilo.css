@@ -23,7 +23,16 @@ body {
     font-size: 14px;
     line-height: 1.7;
     color: #666666;
-    background: rgb(255, 127, 80);
+    background:#ff7f50;
+}
+.gtco-cover.gtco-cover-sm { /*não é este*/
+    height: 450px;
+}
+.gtco-cover.gtco-cover-sm .display-t,
+.gtco-cover.gtco-cover-sm .display-tc {/*não é este*/
+    height: 780px;
+    display: table;
+    width: 100%;
 }
 
 body a {
