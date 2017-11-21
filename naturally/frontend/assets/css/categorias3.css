@@ -222,12 +222,12 @@
 }
 
 .gtco-cover {
-    height: 700px;
+    height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     float: left;
-    width: 90%;
+    width: 100%;
 }
 
 .gtco-cover .overlay {
