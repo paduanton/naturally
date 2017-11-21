@@ -262,18 +262,9 @@
     }
 }
 
-.gtco-cover.gtco-cover-sm { /*não é este*/
-    height: 600px;
-}
 
-@media screen and (max-width: 768px) { /*não é este*/
-    .gtco-cover.gtco-cover-sm {
-        height: 400px;
-    }
-}
-
-.gtco-cover.gtco-cover-sm .display-t,
-.gtco-cover.gtco-cover-sm .display-tc {/*não é este*/
+.gtco-cover.display-t,
+.gtco-cover .display-tc {/*não é este*/
     height: 600px;
     display: table;
     width: 100%;
