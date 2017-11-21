@@ -227,6 +227,7 @@
     background-repeat: no-repeat;
     position: relative;
     float: left;
+    top: 10px;
     width: 100%;
 }
 
@@ -234,7 +235,7 @@
     z-index: 0;
     position: absolute;
     bottom: 0;
-    top: 10px;
+    top: 0;
     left: 0;
     right: 0;
     background: rgba(255, 127, 80, 0.7);
