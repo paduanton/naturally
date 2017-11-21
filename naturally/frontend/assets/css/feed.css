@@ -265,7 +265,7 @@
 
 .gtco-cover.display-t .gtco-cover-sm,
 .gtco-cover .display-tc .gtco-cover-sm {/*não é este*/
-    height: 600px;
+    height: 500px;
     display: table;
     width: 100%;
 }
@@ -273,7 +273,7 @@
 @media screen and (max-width: 768px) {
     .gtco-cover.gtco-cover-sm .display-t,
     .gtco-cover.gtco-cover-sm .display-tc { /*não é este*/
-        height: 600px;
+        height: 200px;
     }
 }
 
