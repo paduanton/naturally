@@ -95,9 +95,9 @@
                             <a ng-href="/">Explorar</a>
                             <ul class="dropdown">
                                 <li><a ng-href="/#!/tendencias">Tendências</a></li>
-                                <li><a ng-href="/#!/veganos">Veganos</a></li>
+                                <li><a ng-href="/#!/vegetarianos">Veganos</a></li>
                                 <li><a ng-href="/#!/vegetarianos">Vegetarianos</a></li>
-                                <li><a href="frontend/conteudo//#!/semgluten.html">Sem Glúten</a></li>
+                                <li><a href="frontend/conteudo/semgluten.html">Sem Glúten</a></li>
                                 <li><a href="frontend/conteudo/#!/diabeticos.html">Diabéticos</a></li>
                                 <li><a href="frontend/conteudo/#!/semlactose.html">Sem Lactose</a></li>
                                 <li><a href="frontend/conteudo/#!/fitness.html">Fitness</a></li>
