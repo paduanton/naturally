@@ -240,9 +240,6 @@
     right: 0;
     background: rgba(255, 127, 80, 0.7);
 }
-.overlay {
-    height:1000px ;
-}
 
 
 @media screen and (max-width: 768px) {
@@ -254,7 +251,7 @@
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
     z-index: 10;
-    height: 500px;
+    height: 1000px;
     display: table;
     width: 100%;
 }
