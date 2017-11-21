@@ -247,7 +247,7 @@
     }
 }
 
-.gtco-cover .display-t,
+.gtco-cover .display-t .teste,
 .gtco-cover .display-tc {
     z-index: 10;
     height: 1000px;
@@ -256,15 +256,15 @@
 }
 
 @media screen and (max-width: 768px) {/*não é este*/
-    .gtco-cover .display-t,
+    .gtco-cover .display-t .teste,
     .gtco-cover .display-tc {
         height: 1000px;
     }
 }
 
 
-.gtco-cover.display-t,
-.gtco-cover .display-tc {/*não é este*/
+.gtco-cover.display-t .gtco-cover-sm,
+.gtco-cover .display-tc .gtco-cover-sm {/*não é este*/
     height: 600px;
     display: table;
     width: 100%;
