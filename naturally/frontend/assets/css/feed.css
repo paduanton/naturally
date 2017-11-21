@@ -251,7 +251,7 @@
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
     z-index: 10;
-    height: 600px;
+    height: 500px;
     display: table;
     width: 100%;
 }
