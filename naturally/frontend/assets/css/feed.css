@@ -251,7 +251,7 @@
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
     z-index: 10;
-    height: 500px;
+    height: 500px!important;
     display: table;
     width: 100%;
 }
@@ -278,14 +278,12 @@
     height: 600px;
     display: table;
     width: 100%;
-    position: relative;
-    top: 100px;
 }
 
 @media screen and (max-width: 768px) {
     .gtco-cover.gtco-cover-sm .display-t,
     .gtco-cover.gtco-cover-sm .display-tc {
-        height: 600px;
+        height: 400px;
     }
 }
 
