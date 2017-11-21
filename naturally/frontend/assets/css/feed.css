@@ -240,6 +240,9 @@
     right: 0;
     background: rgba(255, 127, 80, 0.7);
 }
+.overlay {
+    height:500px ;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -256,14 +259,14 @@
     width: 100%;
 }
 
-@media screen and (max-width: 768px) { /*não é este*/
+@media screen and (max-width: 768px) {/*não é este*/
     .gtco-cover .display-t,
     .gtco-cover .display-tc {
         height: 400px;
     }
 }
 
-.gtco-cover.gtco-cover-sm { //*não é este*//
+.gtco-cover.gtco-cover-sm { /*não é este*/
     height: 600px;
 }
 
@@ -274,16 +277,16 @@
 }
 
 .gtco-cover.gtco-cover-sm .display-t,
-.gtco-cover.gtco-cover-sm .display-tc {
-    height: 1000px;
+.gtco-cover.gtco-cover-sm .display-tc {/*não é este*/
+    height: 600px;
     display: table;
     width: 100%;
 }
 
 @media screen and (max-width: 768px) {
     .gtco-cover.gtco-cover-sm .display-t,
-    .gtco-cover.gtco-cover-sm .display-tc {
-        height: 1000px;
+    .gtco-cover.gtco-cover-sm .display-tc { /*não é este*/
+        height: 400px;
     }
 }
 
