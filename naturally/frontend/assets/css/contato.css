@@ -21,8 +21,10 @@
 
 #gtco-maine {
     width: 100%;
-    background-color: #ff7f50;
-    float: left;
+    background: rgb(255, 127, 80);
+    background: -moz-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: -webkit-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: linear-gradient(to bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);    float: left;
 }
 
 .mt-negative {
@@ -152,7 +154,9 @@ article .content-article {
     left: 0;
     right: 0;
     background: rgb(255, 127, 80);
-}
+    background: -moz-linear-gradient(to top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: -webkit-linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);}
 
 @media screen and (max-width: 768px) {
     .gtco-cover {
