@@ -264,6 +264,10 @@
 
 .gtco-cover.gtco-cover-sm { /*não é este*/
     height: 450px;
+    background: rgb(255, 127, 80);
+    background: -moz-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: -webkit-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: linear-gradient(to bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
 }
 
 @media screen and (max-width: 768px) { /*não é este*/
