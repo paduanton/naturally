@@ -945,6 +945,11 @@
 #gtco-footer {
     padding: 7em 0;
     clear: both;
+    background: rgb(255, 127, 80);
+    background: -moz-linear-gradient(to top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: -webkit-linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+
 }
 
 @media screen and (max-width: 768px) {

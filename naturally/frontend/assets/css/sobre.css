@@ -211,7 +211,9 @@ article a:hover {
 #gtco-maine {
     width: 100%;
     background: rgb(255, 127, 80);
-    float: left;
+    background: -moz-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: -webkit-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: linear-gradient(to bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);    float: left;
 }
 
 #gtco-main .related-title {
@@ -389,6 +391,9 @@ article .gtco-highlight {
     left: 0;
     right: 0;
     background: rgb(255, 127, 80);
+    background: -moz-linear-gradient(to top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: -webkit-linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
 }
 
 .gtco-cover > .gtco-container {
