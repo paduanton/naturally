@@ -215,7 +215,7 @@
     top: 40px;
     left: 50%;
     margin-left: -21px;
-    background-color: #FF9000;
+    background-color: #dd386e;
     z-index: 100;
     display: table;
     -webkit-border-radius: 50%;
@@ -280,7 +280,7 @@
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: normal;
-    color: #bfbfbf;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .timeline-body > p,
@@ -384,7 +384,7 @@
 .services span i {
     font-size: 60px;
     padding: 30px;
-    color: #FA7E0A;
+    color: #dd386e;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     -webkit-border-radius: 50%;
@@ -1071,11 +1071,11 @@
 
 .article-list .owl-nav > div.owl-prev {
     left: -35px;
-    color: blue;
+    color: #f5f5f5;
 }
 
 .article-list .owl-nav > div.owl-next {
-    color: red;
+    color: #f5f5f5;
     right: -35px;
 }
 
