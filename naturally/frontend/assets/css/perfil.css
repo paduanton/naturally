@@ -187,8 +187,11 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color:rgb(255, 127, 80)!important;
-}
+    background: rgb(255, 127, 80);
+    background: -moz-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: -webkit-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: linear-gradient(to bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    float: left;}
 
 .fh5co-cover .profile-thumb img {
     height: 280px;
@@ -198,10 +201,13 @@ body {
     border: white 8px solid;
     right: 12vh;
 }
+.num{
+    background-color: rgba(255,255,255,.15);
 
+}
 .profilenav-list {
     height: 70px;
-    background: #ffb89f;
+    background: #f5b39b;
 }
 
 .profilenav-list blockquote {
@@ -221,9 +227,15 @@ body {
     top: 2.1vh;
     border-radius: 30px;
     background-color: #f5f5f5ab;
-
 }
-
+.rosa {
+    background: #a6d5dc;
+    color: white;
+}
+.branco {
+    background: #b3e4ce;
+    color: white;
+}
 .info {
     margin: 0;
     padding: 0;
