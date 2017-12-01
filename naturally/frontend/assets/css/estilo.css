@@ -18,7 +18,7 @@ body::-webkit-scrollbar-track-piece  {
 }
 
 body {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -44,7 +44,7 @@ body a {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Quicksand', sans-serif;
 }
 
 li #botaobusc a:hover, #botaobusc a:focus, #botaobusc a:active {

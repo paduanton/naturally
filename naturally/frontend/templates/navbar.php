@@ -60,7 +60,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-2 text-left">
-                <div id="gtco-logo"><a ng-href="/">Naturally<span>.</span></a></div>
+                <div id="gtco-logo"><a ng-href="/" class="titulo">Naturally<span>.</span></a></div>
             </div>
             <span></span>
             <div class="col-xs-10 text-right menu-1">

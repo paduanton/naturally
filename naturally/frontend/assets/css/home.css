@@ -488,8 +488,14 @@
         margin: 0 auto 30px auto;
     }
 }
-.homebotao btn{
+.homebotao{
+    font-family: 'Quicksand', sans-serif;
+}
+.rec{
     font-family: 'Quicksand', sans-serif!important;
+}
+.titulo{
+    font-family: 'Shadows Into Light', cursive;
 }
 .services .icon i {
     display: table-cell;
@@ -704,7 +710,7 @@
 }
 
 .modal-title {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 45px;
     text-align: center;
@@ -945,13 +951,16 @@
 #gtco-footer {
     padding: 7em 0;
     clear: both;
+    font-family: 'Quicksand', sans-serif;
     background: rgb(255, 127, 80);
     background: -moz-linear-gradient(to top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
     background: -webkit-linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
     background: linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
 
 }
-
+.footer-heading{
+    font-family: 'Quicksand', sans-serif;
+}
 @media screen and (max-width: 768px) {
     #gtco-services,
     #gtco-main,
