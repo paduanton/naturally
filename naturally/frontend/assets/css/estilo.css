@@ -38,7 +38,9 @@ body {
     display: table;
     width: 100%;
 }
-
+.titulo{
+    font-family: 'Shadows Into Light', cursive;
+}
 body a {
     color: #F73859;
     -webkit-transition: 0.5s;
