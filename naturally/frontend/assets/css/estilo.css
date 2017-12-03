@@ -564,8 +564,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #gtco-footer {
     background: rgb(255, 127, 80);
-    font-family: 'Shadows Into Light', cursive;
-}
+    font-family: 'Quicksand', sans-serif;}
 
 #gtco-footer img {
     width: 173px;
@@ -580,6 +579,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #gtco-footer .footer-heading {
     margin-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #gtco-footer .footer-logo {

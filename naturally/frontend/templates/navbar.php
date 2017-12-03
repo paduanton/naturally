@@ -94,7 +94,7 @@
                         <li class="has-dropdown nav navbar-nav navbar-right  ">
                             <a ng-href="/">Explorar</a>
                             <ul class="dropdown">
-                                <li><a ng-href="/#!/tendencias">Tendências</a></li>
+                                <li><a ng-href="/#!/vegetarianos">Tendências</a></li>
                                 <li><a ng-href="/#!/vegetarianos">Veganos</a></li>
                                 <li><a ng-href="/#!/vegetarianos">Vegetarianos</a></li>
                                 <li><a href="frontend/conteudo/semgluten.html">Sem Glúten</a></li>
