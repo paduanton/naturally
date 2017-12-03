@@ -114,13 +114,13 @@
                               role="form" action=""
                               method="post">
                             <div class="form-group">
-                                <select class="form-control">
+                                <select class="form-control rec">
                                     <option>Pessoas</option>
                                     <option>Receitas</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="search" required
+                                <input type="text" class="form-control rec" name="search" required
                                        placeholder="Pesquisar..." onchange="" class="search form-control">
 
                                 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
