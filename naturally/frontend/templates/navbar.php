@@ -93,7 +93,7 @@
                         <li class="has-dropdown nav navbar-nav navbar-right  ">
                             <a ng-href="/">Explorar</a>
                             <ul class="dropdown">
-                                <li><a ng-href="/#!/tendencias">Tendências</a></li>
+                                <li><a ng-href="/#!/vegetarianos">Tendências</a></li>
                                 <li><a ng-href="/#!/vegetarianos">Veganos</a></li>
                                 <li><a ng-href="/#!/vegetarianos">Vegetarianos</a></li>
                                 <li><a href="frontend/conteudo/semgluten.html">Sem Glúten</a></li>
@@ -113,13 +113,13 @@
                               role="form" action=""
                               method="post">
                             <div class="form-group">
-                                <select class="form-control">
+                                <select class="form-control rec">
                                     <option>Pessoas</option>
                                     <option>Receitas</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="search" required
+                                <input type="text" class="form-control rec" name="search" required
                                        placeholder="Pesquisar..." onchange="" class="search form-control">
 
                                 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
