@@ -1,6 +1,6 @@
 
 #fh5co-features {
-    background:#fcf8e3 ;
+    background:rgba(255, 185, 160, 0.67);
 }
 
 #fh5co-features .services-padding {
@@ -851,7 +851,7 @@
 
 #gtco-main {
     width: 100%;
-    background-color: #fcf8e3;
+    background-color:rgb(255, 224, 213);
     float: left;
 }
 
@@ -953,10 +953,6 @@
     clear: both;
     font-family: 'Quicksand', sans-serif;
     background: rgb(255, 127, 80);
-    background: -moz-linear-gradient(to top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-    background: -webkit-linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-    background: linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-
 }
 .footer-heading{
     font-family: 'Quicksand', sans-serif;
