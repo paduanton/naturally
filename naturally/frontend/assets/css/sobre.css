@@ -3,10 +3,10 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    color: #666666;
-    background: #aa34ee;
 }
-
+a.text-link {
+    font-family: 'Quicksand', sans-serif !important;
+}
 article a {
     color: #F73859;
     cursor: url(../img/naturally.ico), auto;
