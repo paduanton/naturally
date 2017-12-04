@@ -107,7 +107,11 @@
                     </div> <!--fim dos itens que vão sumir-->
                     <li>
                         <ul id="botaobusc" class="nav navbar-nav navbar-right navbar-search-button">
-                            <li><a class="search-button" ng-href="#"><i class="fa fa-search"></i></a></li>
+                            <li>
+                                <a href="" class="search-button">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </li>
                         </ul>
                         <form class="navbar-form form-inline navbar-right navbar-search-form disabled wow fadeInLeft"
                               role="form" action=""
@@ -119,7 +123,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control rec" name="search" required
+                                <input type="text" class="form-control" name="search" required
                                        placeholder="Pesquisar..." onchange="" class="search form-control">
 
                                 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>

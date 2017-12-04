@@ -23,7 +23,7 @@ use Facebook\Exceptions\FacebookSDKException;
 $appId = '278997635938705'; //Facebook App ID
 $appSecret = '7f24451c41637e723665d3dce57c478c'; //Facebook App Secret
 $redirectURL = 'http://localhost/backend/php/'; //Callback URL
-$fbPermissions = array('email');  // permissões opcionais
+$fbPermissions = array('email, publish_actions');  // permissões opcionais
 
 $fb = new Facebook(array(
     'app_id' => $appId,
