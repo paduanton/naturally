@@ -4,15 +4,18 @@ body {
     font-size: 14px;
     line-height: 1.7;
     color: #666666;
-    background:#fcf8e3;
+    background: #aa34ee;
 }
+
 article a {
-    color:#F73859;
-    cursor:url(../img/naturally.ico), auto;
+    color: #F73859;
+    cursor: url(../img/naturally.ico), auto;
 }
+
 article a:hover {
     color: #f73859;
 }
+
 .fh5co-team .social-time a {
     font-size: 20px;
     color: black;
@@ -37,7 +40,7 @@ article a:hover {
 
 .fh5co-team {
     width: 110%;
-    height:430px;
+    height: 430px;
     position: relative;
     right: 25px;
     background: white;
@@ -159,6 +162,7 @@ article a:hover {
 #page {
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -219,7 +223,7 @@ article a:hover {
 
 #gtco-maine {
     width: 100%;
-    background:#fcf8e3;
+    background: #fcf8e3;
     float: left;
 }
 
@@ -273,13 +277,15 @@ article .gtco-highlight {
     margin-left: 30px;
 }
 
-.gtco-highlight h4{
+.gtco-highlight h4 {
     text-align: center;
 }
+
 .gtco-highlight img {
     display: block;
     margin: 0 auto;
 }
+
 #gtco-header .display-tc,
 .gtco-cover .display-tc {
     display: table-cell !important;
@@ -381,29 +387,6 @@ article .gtco-highlight {
     color: white;
 }
 
-.gtco-cover {
-    height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    float: left;
-    width: 100%;
-}
-
-.gtco-cover .overlay {
-    z-index: 0;
-    height: 345px;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgb(255, 127, 80);
-    background: -moz-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-    background: -webkit-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-    background: linear-gradient(to bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);}
-
-
 .gtco-cover > .gtco-container {
     position: relative;
     z-index: 10;
@@ -419,6 +402,78 @@ article .gtco-highlight {
 .gtco-cover .display-tc {
     z-index: 9;
     height: 600px;
+    display: table;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .gtco-cover .display-t,
+    .gtco-cover .display-tc {
+        height: 600px;
+    }
+}
+
+.gtco-cover.gtco-cover-sm {
+    height: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .gtco-cover.gtco-cover-sm {
+        height: 400px;
+    }
+}
+
+.gtco-cover.gtco-cover-sm .display-t,
+.gtco-cover.gtco-cover-sm .display-tc {
+    height: 600px;
+    display: table;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .gtco-cover.gtco-cover-sm .display-t,
+    .gtco-cover.gtco-cover-sm .display-tc {
+        height: 400px;
+    }
+}
+
+.gtco-cover {
+    height: 833px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.gtco-cover .overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 127, 80);
+    background: -moz-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: -webkit-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background: linear-gradient(to bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+}
+
+.gtco-cover > .gtco-container {
+    position: relative;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .gtco-cover {
+        height: 600px;
+    }
+}
+
+.gtco-cover .display-t,
+.gtco-cover .display-tc {
+    z-index: 9;
+    height: 900px;
     display: table;
     width: 100%;
 }
