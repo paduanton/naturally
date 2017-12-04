@@ -23,7 +23,7 @@
     <div class="fh5co-menu">
         <div class="fh5co-box">
             <h3 class="heading">
-                <a ng-href="/perfil">
+                <a ng-href="/#!/perfil">
                     <li class="glyphicon glyphicon-user"></li>
                     Perfil
                 </a>

@@ -1,3 +1,11 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    background:#fcf8e3;
+}
 article a {
     color:#F73859;
     cursor:url(../img/naturally.ico), auto;
@@ -211,10 +219,7 @@ article a:hover {
 
 #gtco-maine {
     width: 100%;
-    background: rgb(255, 127, 80);
-    background: -moz-linear-gradient(to top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-    background: -webkit-linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-    background: linear-gradient(bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
+    background:#fcf8e3;
     float: left;
 }
 
@@ -387,6 +392,7 @@ article .gtco-highlight {
 
 .gtco-cover .overlay {
     z-index: 0;
+    height: 345px;
     position: absolute;
     bottom: 0;
     top: 0;
