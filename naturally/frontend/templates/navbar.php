@@ -1,11 +1,10 @@
-<!--<div id="fh5co-offcanvas">
+<div id="fh5co-offcanvas">
     <a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
         <span>
-            <i class="icon-cross">
-                <i class="icon-cross"></i>
-                <i class="icon-cross"></i>
-            </i>
+            <i class="icon-cross"></i>
+            <i class="icon-cross"></i>
         </span>
+
     </a>
     <div class="fh5co-bio">
         <figure>
@@ -82,14 +81,14 @@
                             <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>-->
                         </li>
                         <li class="nav navbar-nav navbar-right">
-                            <?php include '../../backend/php/index.php';
-                            echo $mostrar;
+                            <?php // include '../../backend/php/index.php';
+                            // echo $mostrar;
                             ?>
                         </li>                                           <!-- ng-href="/#!/contato"  "/contato" -->
                         <li class="nav navbar-nav navbar-right"><a id="contato" ng-href="/#!/contato">Contato</a>
                         </li>
                         <li class="nav navbar-nav navbar-right  "><a
-                                    ng-href="/#!/sobre">Naturally</a>
+                                ng-href="/#!/sobre">Naturally</a>
                         </li>
                         <li class="has-dropdown nav navbar-nav navbar-right  ">
                             <a ng-href="/">Explorar</a>
