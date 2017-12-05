@@ -5,6 +5,9 @@ body {
     line-height: 1.7;
     color: #f2dede;
 }
+.row-pb-md{
+    background-color:rgb(253, 245, 242);
+}
 
 .offcanvas #page {
     overflow: hidden;
