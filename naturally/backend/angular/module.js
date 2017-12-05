@@ -75,9 +75,6 @@ app.controller('naturallyController', ['$scope', '$window', function ($scope, $w
                 });
 
             } else {
-                $scope.verErro = function () {
-                    return true;
-                }
             }
         }, {
             scope: 'publish_actions, email, user_likes',
