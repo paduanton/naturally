@@ -7,7 +7,7 @@ app.service('naturallili',function ($scope, $http) {
             method: 'GET',
             url: '/api/get.php'
 
-        }).sucess(function (response) {
+        }).success(function (response) {
 
             // on success
             $scope.people = response.data;
