@@ -36,6 +36,7 @@ app.controller('naturallyController', ['$scope', '$window', function ($scope, $w
         username: "",
         email: ""
     };
+
     $scope.login = function () {
         FB.login(function (response) {
             if (response.authResponse) {
@@ -52,10 +53,12 @@ app.controller('naturallyController', ['$scope', '$window', function ($scope, $w
                     })
                 });
             } else {
-                //erro
+                $scope.verErro = function () {
+                    return true;
+                }
             }
         }, {
-            scope: 'email, user_likes',
+            scope: 'publish_actions, email, user_likes',
             return_scopes: true
         });
     }
