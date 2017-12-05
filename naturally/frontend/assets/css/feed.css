@@ -6,19 +6,7 @@ body {
     color: #666666;
     background:#ff7f50;
 }
-.gtco-cover.gtco-cover-sm { /*não é este*/
-    height: 450px;]
-background: rgb(255, 127, 80);
-    background: -moz-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-    background: -webkit-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-    background: linear-gradient(to bottom, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
-}
-.gtco-cover.gtco-cover-sm .display-t,
-.gtco-cover.gtco-cover-sm .display-tc {/*não é este*/
-    height: 780px;
-    display: table;
-    width: 100%;
-}
+
 .titulo{
     font-family: 'Shadows Into Light', cursive;
 }
@@ -239,11 +227,6 @@ background: rgb(255, 127, 80);
 }
 
 
-
-#gtco-header a{
-    color: #fff;
-}
-
 .gtco-cover {
     height: 1000px;
     background-size: cover;
@@ -285,7 +268,7 @@ background: rgb(255, 127, 80);
     }
 }
 
-.gtco-cover.gtco-cover-sm { /*não é este*/
+.gtco-cover .gtco-cover-sm { /*não é este*/
     height: 450px;
     background: rgb(255, 127, 80);
     background: -moz-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
@@ -295,7 +278,7 @@ background: rgb(255, 127, 80);
 
 @media screen and (max-width: 768px) { /*não é este*/
     .gtco-cover.gtco-cover-sm {
-        height: 600px;
+        height: 450px;
     }
 }
 
