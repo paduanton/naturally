@@ -20,7 +20,7 @@ app.service('naturallili',function ($scope, $http) {
         });
     };
 })
-app.controller('naturallyController', ['$scope', '$window', function ($scope, $window) {
+app.controller('naturallyController', ['$scope', '$window', function ($scope, $window, naturallili) {
 
     $window.fbAsyncInit = function () {
         FB.init({
