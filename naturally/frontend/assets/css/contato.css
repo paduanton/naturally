@@ -3,11 +3,9 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    color: #f2dede;
+    background-color: #f2dede;
 }
-.row-pb-md{
-    background-color:rgb(253, 245, 242);
-}
+
 
 .offcanvas #page {
     overflow: hidden;
