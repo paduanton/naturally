@@ -268,7 +268,7 @@ body {
     }
 }
 
-.gtco-cover.gtco-cover-sm { /*não é este*/
+.gtco-cover .gtco-cover-sm { /*não é este*/
     height: 450px;
     background: rgb(255, 127, 80);
     background: -moz-linear-gradient(top, rgb(255, 127, 80) 1%, rgb(255, 185, 160) 100%);
