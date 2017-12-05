@@ -92,9 +92,10 @@
                         </li>
                         <li class="nav navbar-nav navbar-right  ">
                             <button  type="button" ng-click="login()" class="login">
+                                <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false" onlogin="javascript:CallAfterLogin();" scope="publish_actions,email">
                                 <div class="sign">
                                     <img src="frontend/assets/img/fb.svg"> Logar com JS
-                                </div>
+                                </div></div>
                             </button>
                             <button class="btn" data-toggle="modal" data-target="#myModal">ABRIR ERRO</button>
                             <!-- botão continuar como ...

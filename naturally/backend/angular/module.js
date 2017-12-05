@@ -1,4 +1,25 @@
 var app = angular.module('appNaturally', ['ngRoute']);
+app.service('naturallili',function ($scope, $http) {
+    $scope.people;
+    $scope.getPeople = function() {
+        $http({
+
+            method: 'GET',
+            url: '/api/get.php'
+
+        }).sucess(function (response) {
+
+            // on success
+            $scope.people = response.data;
+
+        }) .error(function (response) {
+
+            // on error
+            console.log(response.data,response.status);
+
+        });
+    };
+})
 app.controller('naturallyController', ['$scope', '$window', function ($scope, $window) {
 
     $window.fbAsyncInit = function () {
@@ -52,6 +73,7 @@ app.controller('naturallyController', ['$scope', '$window', function ($scope, $w
                         $scope.facebook.locale = response.locale;
                     })
                 });
+
             } else {
                 $scope.verErro = function () {
                     return true;
