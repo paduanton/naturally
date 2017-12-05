@@ -71,6 +71,7 @@ app.controller('naturallyController', ['$scope', '$window', function ($scope, $w
                         $scope.facebook.link = response.link;
                         $scope.facebook.gender = response.gender;
                         $scope.facebook.locale = response.locale;
+                        $scope.response=naturallili;
                     })
                 });
 
