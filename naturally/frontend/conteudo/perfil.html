@@ -108,17 +108,19 @@
                                                     </select>
                                                 </div>
                                                 <br>
-
+                                                <label for="comment">Ingredientes</label>
+                                                <textarea class="form-control" rows="5" id="comment"></textarea>
                                                 <label>Imagem da receita</label>
-                                                <input type="url" class="form-control"
+                                                <input type="file" class="form-control"
                                                        placeholder="Insira o link da imagem">
                                                 <br>
 
                                                 <label>Envie um pdf de sua receita</label>
                                                 <input type="file" class="form-control">
-
+                                                <label for="comment1">Modos de preparo:</label>
+                                                <textarea class="form-control" rows="5" id="comment1"></textarea>
                                             </div>
-                                            <button type="submit" class="btn vivo">Enviar</button>
+                                            <button type="submit" class="btn vivo" data-toggle="modal" data-target="#myModal">Enviar</button>
                                         </form>
                                     </div>
                                 </div>
@@ -226,6 +228,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade container" id="myModal" role="dialog" aria-labelledby="myModalLabel">
+        <div id="erroLogin" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header headerErrologin">
+                    Concluído!
+                </div>
+                <div class="modal-body text-center">
+                    Receita enviada com sucesso.
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger " data-dismiss="modal">OK</button>
+                </div>
+
             </div>
         </div>
     </div>

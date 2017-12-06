@@ -1,26 +1,5 @@
 var app = angular.module('appNaturally', ['ngRoute']);
-app.service('naturallili',function ($scope, $http) {
-    $scope.people;
-    $scope.getPeople = function() {
-        $http({
-
-            method: 'GET',
-            url: '/api/get.php'
-
-        }).success(function (response) {
-
-            // on success
-            $scope.people = response.data;
-
-        }) .error(function (response) {
-
-            // on error
-            console.log(response.data,response.status);
-
-        });
-    };
-})
-app.controller('naturallyController', ['$scope', '$window', function ($scope, $window, naturallili) {
+app.controller('naturallyController', ['$scope', '$window', function ($scope, $window) {
 
     $window.fbAsyncInit = function () {
         FB.init({
@@ -58,6 +37,15 @@ app.controller('naturallyController', ['$scope', '$window', function ($scope, $w
         email: ""
     };
 
+    $scope.semVisibilidade = false;
+    $scope.comVisibilidade = true;
+
+    $scope.mudarVisibilidade = function () {
+        $scope.semVisibilidade = !$scope.semVisibilidade;
+        $scope.comVisibilidade = false;
+        $scope.$apply();
+    }
+
     $scope.login = function () {
         FB.login(function (response) {
             if (response.authResponse) {
@@ -71,10 +59,9 @@ app.controller('naturallyController', ['$scope', '$window', function ($scope, $w
                         $scope.facebook.link = response.link;
                         $scope.facebook.gender = response.gender;
                         $scope.facebook.locale = response.locale;
-                        $scope.response=naturallili;
                     })
                 });
-
+                angular.element(document.getElementById('usuarioLogado')).scope().mudarVisibilidade();
             } else {
             }
         }, {
@@ -83,7 +70,7 @@ app.controller('naturallyController', ['$scope', '$window', function ($scope, $w
         });
     }
     $scope.logout = function () {
-        FB.logout(function(response) {
+        FB.logout(function (response) {
             // Person is now logged out
         });
     }
