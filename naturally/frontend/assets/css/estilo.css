@@ -4,6 +4,10 @@ body::-webkit-scrollbar {
 .titulo{
     font-family: "Shadows Into Light", cursive;
 }
+.btn{
+    font-size: 14px;
+    font-family: "Dosis",sans-serif;
+}
 /*
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -1133,4 +1137,12 @@ a:hover, a:active, a:focus {
     margin: 0;
     background-color: transparent;
     text-align: center;
+}
+
+.portfolio-entry {
+    background-image: url(frontend/assets/img/antonio.png);
+}
+
+.portfolio-entry {
+    background-image: url(frontend/assets/img/macarrao.jpg);
 }
