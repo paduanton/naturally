@@ -55,25 +55,6 @@
 </div>
 <!--Navbar-->
 
-<!--Modal-->
-<div class="modal fade container" id="myModal" role="dialog" aria-labelledby="myModalLabel">
-    <div id="erroLogin" class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header headerErrologin">
-                Opa!
-            </div>
-            <div class="modal-body text-center">
-                Não foi possível conectar. Você precisa autorizar o Naturally.
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger " data-dismiss="modal">OK</button>
-            </div>
-
-        </div>
-    </div>
-</div>
-
 <nav class="gtco-nav" role="navigation">
     <div class="container">
         <div class="row">
@@ -84,19 +65,18 @@
             <div class="col-xs-10 text-right menu-1">
                 <ul>
                     <div class="navbar-menu-items wow fadeIn">
-                        <li class="nav navbar-nav navbar-right">
+                        <li class="nav navbar-nav navbar-right" id="usuarioLogado" ng-show="semVisibilidade">
                             <a class="js-perfil-toggle perfil-toggle">
                                 <img ng-src="{{facebook.image}}" class="img-circle">
                                 {{facebook.name}}
                             </a>
                         </li>
                         <li class="nav navbar-nav navbar-right  ">
-                            <button  type="button" ng-click="login()" class="login">
+                            <button  type="button" ng-show="comVisibilidade" ng-click="login()" class="login">
                                 <div class="sign">
-                                    <img src="frontend/assets/img/fb.svg"> Logar com JS
+                                    <img src="frontend/assets/img/fb.svg"> Logar com Facebook
                                 </div>
                             </button>
-                            <button class="btn" data-toggle="modal" data-target="#myModal">ABRIR ERRO</button>
                             <!-- botão continuar como ...
                             <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>-->
                         </li>

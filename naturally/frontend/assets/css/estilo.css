@@ -76,7 +76,6 @@ ul.navbar-nav {
     background: none;
     border: 0;
     background: #fff;
-    font-family: 'Shadows Into Light', cursive;
     font-size: 15px;
     color: #474747;
     font-weight: normal !important;
@@ -109,12 +108,13 @@ ul.navbar-nav {
 .navbar-search-form button[type="submit"] {
     border: 0;
     height: 42px;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 16px;
     background: #fafafa;
     display: inline-block;
     position: relative;
-    right: 16px;
+    right: 37px;
+    top: -1px;
     color: #757575;
     outline: thin dotted !important;
     outline: 0px auto -webkit-focus-ring-color !important;
@@ -135,7 +135,6 @@ ul.navbar-nav {
     height: 42px;
     border: 0;
     color: #474747;
-    font-family: 'Shadows Into Light', cursive;
     position: relative;
     left: 9px;
     border-radius: 10px 0 0 10px;
@@ -955,7 +954,6 @@ h1, h2, h3, h4, h5, h6, figure {
     color: black;
     height: 40px;
     font-size: 14px;
-    font-family: 'Shadows Into Light', cursive;
     font-weight: 500 !important;
     border-radius: 800px;
     border: none;

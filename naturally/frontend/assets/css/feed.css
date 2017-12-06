@@ -7,9 +7,6 @@ body {
     background:#ff7f50;
 }
 
-.titulo{
-    font-family: 'Shadows Into Light', cursive;
-}
 
 #page {
     position: relative;
@@ -342,7 +339,7 @@ body {
 .gtco-cover .display-tc h2 {
     font-size: 20px;
     line-height: 1.5;
-    font-family: 'Amatic SC', cursive;
+    font-family: calibri, cursive;
     margin-bottom: 30px;
     text-transform: none;
 }
@@ -357,6 +354,12 @@ body {
     margin-bottom: 40px;
 }
 
+.mb30 {
+    font-family: "Roboto Mono", monospace
+}
+.mb30:hover {
+    color: #fff;
+}
 .fh5co-portfolio > a {
     width: 100%;
     float: left;
@@ -503,7 +506,7 @@ body {
 }
 
 .modal {
-    font-family: 'Amatic SC', cursive;
+    font-family: calibri, cursive;
     padding: 0 !important;
 }
 
@@ -526,7 +529,7 @@ body {
 
 .modal-title {
     text-transform: uppercase;
-    font-family: 'Amatic SC', cursive;
+    font-family: calibri, cursive;
     font-weight: 500;
     font-size: 35px;
     text-align: center;
@@ -567,7 +570,7 @@ input:read-only {
 .conversor-content h3 {
     font-size: 20px;
     text-align: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: calibri, cursive;
 }
 
 .entradaDados .quantidade-entrada {
@@ -665,7 +668,7 @@ input:read-only {
 }
 
 .desc p {
-    font-family: 'Amatic SC', cursive;
+    font-family: calibri, cursive;
     color: black;
     font-size: 17px;
 }
