@@ -1138,11 +1138,3 @@ a:hover, a:active, a:focus {
     background-color: transparent;
     text-align: center;
 }
-
-.portfolio-entry {
-    background-image: url(frontend/assets/img/antonio.png);
-}
-
-.portfolio-entry {
-    background-image: url(frontend/assets/img/macarrao.jpg);
-}
