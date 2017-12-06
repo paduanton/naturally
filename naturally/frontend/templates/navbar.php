@@ -119,7 +119,7 @@
                                 <li><a href="frontend/conteudo/semgluten.html">Sem Glúten</a></li>
                                 <li><a href="frontend/conteudo/#!/diabeticos.html">Diabéticos</a></li>
                                 <li><a href="frontend/conteudo/#!/semlactose.html">Sem Lactose</a></li>
-                                <li><a href="frontend/conteudo/#!/fitness.html">Fitness</a></li>
+                                <li><a href="frontend/conteudo/#!/fitness">Fitness</a></li>
                             </ul>
                         </li>
                         <li class="nav navbar-nav navbar-right"><a class="active" ng-href="/#!/feed">Feed</a>

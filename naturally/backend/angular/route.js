@@ -52,7 +52,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             controller: "TendenciasController"
         })
         .when("/veganos", {
-            templateUrl: "frontend/conteudo/veganos.html",
+            templateUrl: "frontend/conteudo/fitness.html",
             controller: "VeganosController"
         })
         .when("/vegetarianos", {
