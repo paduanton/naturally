@@ -65,7 +65,7 @@ app.controller('naturallyController', ['$scope', '$window', function ($scope, $w
             } else {
             }
         }, {
-            scope: 'publish_actions, email, user_likes',
+            scope: 'publish_actions, email',
             return_scopes: true
         });
     }

@@ -11,7 +11,7 @@
   $.fn.backstretch = function (images, options) {
     // We need at least one image or method name
     if (images === undefined || images.length === 0) {
-      $.error("No img-slides were supplied for Backstretch");
+      $.error("No slides were supplied for Backstretch");
     }
 
     /*
@@ -115,7 +115,7 @@
      */
     this.images = $.isArray(images) ? images : [images];
 
-    // Preload img-slides
+    // Preload slides
     $.each(this.images, function () {
       $('<img />')[0].src = this;
     });    

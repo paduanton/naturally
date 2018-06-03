@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="appNaturally" ng-controller="naturallyController">
 <head>
     <base href="/">
     <meta charset="utf-8">
@@ -19,15 +19,12 @@
     <link rel="stylesheet" href="frontend/assets/css/animate.css">
     <link rel="stylesheet" href="frontend/assets/css/icomoon.css">
     <link rel="stylesheet" href="frontend/assets/css/estilo.css">
-    <!--<link rel="stylesheet" href="frontend/assets/fonts-icons/fonts/fa-css/font-awesome.min.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body ng-app="appNaturally" ng-controller="naturallyController">
-<!--<div class="gtco-loader"></div>-->
+<body>
 <div id="page">
-    <div ng-include='"frontend/templates/navbar.php"'></div>
+    <div ng-include='"frontend/templates/navbar.html"'></div>
     <div ng-view></div>
-    <!--Footer-->
     <div ng-include='"frontend/templates/footer.html"'></div>
 </div>
 <div class="gototop js-top">

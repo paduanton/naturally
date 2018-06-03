@@ -21,6 +21,6 @@ CREATE TABLE usuario (
 ALTER TABLE usuario ADD nome varchar(100) COLLATE utf8_unicode_ci NOT NULL AFTER facebook_id;
 ALTER DATABASE naturally  COLLATE = latin1_swedish_ci;
 -- UPDATE usuario SET name = concat(first_name, " ", last_name);
--- DROP DATABASE naturally;
+-- DROP DATABASE naturally; trigger if(primeiro nome != ultimo nome) then update nome completo = concat(primeiro, " ",
 
 select * from usuario
