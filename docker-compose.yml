@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+    web:
+      container_name: naturally-frontend
+      build: ./
+      volumes:
+        - './:/app'
+      ports:
+        - '80:4200'
+      command: >
+        bash -c "ng serve --host 0.0.0.0 --disableHostCheck true --port 4200"
