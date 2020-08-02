@@ -1,0 +1,7 @@
+<div class="field" >
+  <atom-label [for]="id" [text]="text">
+    <ng-content select="[slot-label]"></ng-content>
+  </atom-label>
+  <atom-input [type]="type" [id]="id" [placeholder]="placeholder"></atom-input>
+  <ng-content select="[slot-after]"></ng-content>
+</div>

@@ -1,0 +1,27 @@
+<article class="container">
+  <molecule-card color="white">
+    <atom-title
+      type="h1"
+      text="Naturally"
+      image="../../../assets/images/logo.jpg"
+      class="login__title">
+    </atom-title>
+
+    <!-- Content -->
+    <ng-content></ng-content>
+    <!-- /Content -->
+  </molecule-card>
+
+  <molecule-card color="blue" image="/assets/images/bubbles.svg">
+    <atom-icon icon="arrow"></atom-icon>
+    <div slot-right>
+      <atom-title
+        type="h1"
+        [text]="title"
+        class="subtitle">
+      </atom-title>
+      <p class="description">{{description}}</p>
+    </div>
+  </molecule-card>
+</article>
+

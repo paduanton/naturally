@@ -1,0 +1,12 @@
+<button
+  [class]="cssClass"
+  [ngClass]="{
+    'button button--primary': buttonThemes.Primary === theme,
+    'button button--secondary': buttonThemes.Secondary === theme,
+    'button button--outline': buttonThemes.Outline === theme
+  }"
+  [type]="type"
+  [disabled]="disabled"
+  (click)="action.emit()">
+  {{text}}
+</button>

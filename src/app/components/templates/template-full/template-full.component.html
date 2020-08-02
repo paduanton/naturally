@@ -1,0 +1,22 @@
+<article class="container">
+  <molecule-card color="blue" image="/assets/images/bubles-full.svg">
+    <atom-icon [icon]="icon"></atom-icon>
+    <atom-title
+      type="h1"
+      [text]="title"
+      class="subtitle">
+    </atom-title>
+
+    <p class="description">
+      <ng-content></ng-content>
+    </p>
+
+    <atom-button
+      theme="secondary"
+      type="button"
+      [text]="buttonText"
+      (action)="action.emit()">
+    </atom-button>
+  </molecule-card>
+</article>
+

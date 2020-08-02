@@ -1,0 +1,6 @@
+<ng-template [ngIf]="text && text !== ''">
+  <label [for]="for">
+    {{text}}
+    <ng-content></ng-content>
+  </label>
+</ng-template>

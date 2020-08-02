@@ -1,0 +1,42 @@
+@import '~src/assets/styles/theme-default';
+
+:host{
+
+  input{
+    background: $white;
+    border: 2px solid #EFF1F5;
+    border-radius: 6px;
+    padding: 10px 15px;
+    width: 100%;
+    display: block;
+    transition: $transition-default;
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4F4F4F;
+
+    &:focus, &:active{
+      outline: none;
+    }
+
+
+    &.ng-touched{
+
+      &.ng-invalid{
+        border-color: $alert;
+        color: $alert;
+      }
+    }
+  }
+}
+
+@media ($mobile) {
+  :host{
+
+    input{
+      font-size: 14px;
+    }
+  }
+}

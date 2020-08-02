@@ -1,0 +1,50 @@
+@import '~src/assets/styles/theme-default';
+
+:host{
+
+  button{
+    font-family: $font-family;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 143.2%;
+    padding: 20px 75px;
+
+    &[disabled]{
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &.button--primary{
+      background: radial-gradient(66.83% 109.44% at 99.52% 100%, #7BD5F5 0%, #1F2F98 100%);
+      border-radius: 46px;
+      text-transform: uppercase;
+      color: #FFF;
+
+      &[disabled]{
+        background:#203099;
+      }
+    }
+
+    &.button--secondary{
+      background: linear-gradient(156.81deg, #00DBCD 1.79%, #BEFFFB 100%);;
+      border-radius: 46px;
+      text-transform: uppercase;
+      color: #182370;
+
+      &[disabled]{
+        background:#BEFFFB ;
+      }
+    }
+  }
+}
+
+@media ($mobile) {
+  :host{
+    button{
+      padding: 16px 45px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '~src/assets/styles/theme-default';
+
+
+:host{
+
+  small{
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 130%;
+
+    &.error{
+      color: $alert;
+
+      a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: $alert;
+      }
+    }
+
+    &.success{
+      color: $success;
+
+      a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: $success;
+      }
+    }
+  }
+}

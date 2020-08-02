@@ -1,0 +1,73 @@
+@import '~src/assets/styles/theme-default';
+
+:host{
+
+  .container{
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    height: 78vh;
+    max-height: 656px;
+  }
+
+  molecule-card{
+    background-color: #fff;
+    border-radius: 8px;
+
+    atom-icon{
+      margin-bottom: 10px;
+    }
+
+    ::ng-deep{
+      .card{
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .description{
+        max-width: 70%;
+        text-align: center;
+        color: $white;
+        line-height: 130%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media ($mobile) {
+  :host{
+
+    molecule-card{
+      height: 100%;
+
+      .description{
+        font-size: 14px;
+        max-width: 91%;
+      }
+    }
+
+    ::ng-deep{
+      .card{
+        text-align: center;
+      }
+
+      atom-icon{
+        img{
+          width: 131px;
+        }
+      }
+    }
+
+    .container{
+      flex-direction: column;
+      margin: 15px 16px;
+      width: calc(100% - 32px);
+      max-height: none;
+      height: 93vh;
+      min-height: 440px;
+    }
+  }
+}

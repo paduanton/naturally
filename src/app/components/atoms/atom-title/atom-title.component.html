@@ -1,0 +1,27 @@
+<ng-template [ngIf]="type === 'h1'">
+  <h1 [innerHTML]="title"></h1>
+</ng-template>
+
+<ng-template [ngIf]="type === 'h2'">
+  <h2 [innerHTML]="title"></h2>
+</ng-template>
+
+<ng-template [ngIf]="type === 'h3'">
+  <h3 [innerHTML]="title"></h3>
+</ng-template>
+
+<ng-template [ngIf]="type === 'h4'">
+  <h4 [innerHTML]="title"></h4>
+</ng-template>
+
+<ng-template [ngIf]="type === 'h5'">
+  <h5 [innerHTML]="title"></h5>
+</ng-template>
+
+<ng-template [ngIf]="type === 'h6'">
+  <h6 [innerHTML]="title"></h6>
+</ng-template>
+
+<ng-template [ngIf]="!type || type === ''">
+  <h6 [innerHTML]="title"></h6>
+</ng-template>

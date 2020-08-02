@@ -1,0 +1,11 @@
+<div
+  class="card"
+  [ngClass]="{
+    'card--white': color === 'white',
+    'card--blue': color === 'blue',
+    'card--image': !!image
+  }"
+  [ngStyle]="{'background-image': image ? 'url(' + image + ')' : 'none'}"
+  >
+    <ng-content></ng-content>
+</div>

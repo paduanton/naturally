@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/theme-default";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+app-root {
+  width: 100%;
+  display: block;
+}
+
+html,
+body,
+app-root,
+main {
+  min-height: 100vh;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

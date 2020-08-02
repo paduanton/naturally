@@ -1,0 +1,40 @@
+<template-default title="Olá!" description="Informe o seu email de cadastro e senha para acessar a sua conta.">
+
+  <form class="login__form" [formGroup]="parentFormGroup" (submit)="onSubmit.emit()">
+    <molecule-field type="email" text="Email" id="username" placeholder="Digite seu email"
+      [parentFormGroup]="parentFormGroup">
+      <div slot-after>
+        <atom-message
+          *ngIf="parentFormGroup.get('username').errors?.required && parentFormGroup.get('username').touched"
+          text="O campo senha é obrigatório">
+        </atom-message>
+        <atom-message *ngIf="parentFormGroup.get('username').errors?.email && parentFormGroup.get('username').touched"
+          text="O campo Email é obrigatório">
+        </atom-message>
+        <atom-message
+          *ngIf="parentFormGroup.get('username').errors?.usernameNotFound && parentFormGroup.get('username').touched"
+          text="Desculpe, não encontramos um cadastro com esse email. Verifique o email digitado ou entre em contato.">
+        </atom-message>
+      </div>
+    </molecule-field>
+
+    <molecule-field type="password" text="Senha" id="password" placeholder="Digite sua senha"
+      [parentFormGroup]="parentFormGroup">
+      <atom-link url="/recuperar-senha" text="Esqueceu a senha?" slot-label>
+      </atom-link>
+      <div slot-after>
+        <atom-message
+          *ngIf="parentFormGroup.get('password').errors?.required && parentFormGroup.get('password').touched"
+          text="O campo Senha é obrigatório">
+        </atom-message>
+        <atom-message
+          *ngIf="parentFormGroup.get('password').errors?.wrongPassword && parentFormGroup.get('password').touched">
+          Senha incorreta. Tente novamente ou <atom-link url="/recuperar-senha" text="solicite outra"></atom-link>.
+        </atom-message>
+      </div>
+    </molecule-field>
+
+    <atom-button theme="primary" type="submit" text="Entrar no painel" [disabled]="parentFormGroup.invalid">
+    </atom-button>
+  </form>
+</template-default>
